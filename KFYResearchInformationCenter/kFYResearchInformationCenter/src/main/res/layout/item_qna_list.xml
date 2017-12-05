@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bottom_bar"
+    android:orientation="vertical"
+    android:paddingLeft="5dp"
+    android:paddingTop="5dp"
+    android:paddingRight="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ask_layout"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/question_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp" />
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp">
+
+            <ImageView
+                android:id="@+id/textView2"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/view_num" />
+
+            <TextView
+                android:id="@+id/click_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView2"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/textView2"
+                android:textColor="@color/view_num" />
+
+            <ImageView
+                android:id="@+id/textView4"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_alignBaseline="@+id/textView2"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/click_num"
+                android:src="@drawable/comment_num" />
+
+            <TextView
+                android:id="@+id/comment_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView4"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/textView4"
+                android:textColor="@color/view_num" />
+
+            <TextView
+                android:id="@+id/comment_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:textColor="@color/view_num" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/parting_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/bottom_bar"
+            android:orientation="vertical"></LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/nice_answer_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/answerer_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/view_num" />
+
+                    <TextView
+                        android:id="@+id/answer_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/view_num" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/answer_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

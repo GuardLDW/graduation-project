@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <include
+        android:id="@+id/include1"
+        layout="@layout/main_title"
+        android:focusable="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:id="@+id/ll_write"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/write_comment_layout"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/write_comment" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:text="@string/click_to_comment"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"/>
+
+    </LinearLayout>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_write"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/include1"
+        android:scrollbars="vertical"
+        ptr:ptrAnimationStyle="flip"
+        ptr:ptrMode="both"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/question_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="@dimen/message_title_margin_right"
+                android:layout_marginRight="@dimen/message_title_margin_right"
+                android:layout_marginTop="@dimen/message_title_margin_top"
+                android:textSize="@dimen/message_title_textsize" />
+
+            <TextView
+                android:id="@+id/comment_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/question_title"
+                android:layout_below="@+id/question_title" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/comment_time"
+                android:layout_marginTop="5dp"
+                android:background="@color/bottom_bar"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/message_title_margin_right"
+                    android:text="@string/question_content" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/answerer_name"
+                android:layout_alignBottom="@+id/answerer_name"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/answerer_name"
+                android:text="@string/publish_at_colon"
+                android:textColor="@color/bottom_text" />
+
+            <TextView
+                android:id="@+id/answer_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView3"
+                android:layout_alignBottom="@+id/textView3"
+                android:layout_toRightOf="@+id/textView3"
+                android:textColor="@color/bottom_text" />
+
+            <TextView
+                android:id="@+id/answer_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/answerer_name"
+                android:layout_below="@+id/answerer_name"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:id="@+id/answerer_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/comment_time"
+                android:layout_below="@+id/linearLayout1"
+                android:textSize="@dimen/nickname_textsize" />
+
+            <LinearLayout
+                android:id="@+id/ll_vip_answer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/answer_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/bottom_bar"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/TextView01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/message_title_margin_right"
+                    android:text="@string/official_answer" />
+            </LinearLayout>
+
+            <com.bjut.cyl.kfyrip.other.NoScrollListView
+                android:id="@+id/lv_answer_vip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/ll_vip_answer" />
+
+            <LinearLayout
+                android:id="@+id/ll_normal_answer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/lv_answer_vip"
+                android:background="@color/bottom_bar"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/TextView02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/message_title_margin_right"
+                    android:text="@string/normal_answer" />
+            </LinearLayout>
+
+            <com.bjut.cyl.kfyrip.other.NoScrollListView
+                android:id="@+id/lv_answer_normal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/ll_normal_answer" />
+
+        </RelativeLayout>
+    </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+
+</RelativeLayout>

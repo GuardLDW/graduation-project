@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/tools_box_bg"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:id="@+id/llRoot"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <com.bjut.cyl.kfyrip.view.RoundedImageView
+            android:id="@+id/headImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25.0dip"
+            android:adjustViewBounds="true"
+            android:maxHeight="80dip"
+            android:maxWidth="80dip"
+            android:src="@drawable/user_logo" />
+
+        <TextView
+            android:id="@+id/nickNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10.0dip"
+            android:text="@string/wangzhiqiang"
+            android:textColor="#ffccccc6"
+            android:textSize="23dp" />
+
+        <TextView
+            android:id="@+id/yixinCodeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:layout_marginTop="6.0dip"
+            android:textColor="#ffa8a8a3"
+            android:textSize="12.0sp" />
+
+        <include
+            android:id="@+id/menu_my_question"
+            layout="@layout/menu_item_home" />
+
+        <include
+            android:id="@+id/menu_my_collect"
+            layout="@layout/menu_item_wifi" />
+
+        <include
+            android:id="@+id/menu_my_sign_up"
+            layout="@layout/menu_item_mysignup" />
+
+        <!--<include
+            android:id="@+id/menu_message_noti"
+            layout="@layout/menu_item_setting" />
+
+        <include
+            android:id="@+id/menu_news_noti"
+            layout="@layout/menu_item_add_devices" />-->
+
+        <include
+            android:id="@+id/menu_sign_in"
+            layout="@layout/menu_item_sign_in" />
+
+        <include
+            android:id="@+id/menu_about"
+            layout="@layout/menu_item_version" />
+        
+         <include
+            android:id="@+id/menu_exit"
+            layout="@layout/menu_item_exit" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.3299866dip"
+            android:background="#ff1c1c1b" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:background="#ff474745" />
+
+    <!--      <TextView
+            android:id="@+id/exit"
+            android:layout_marginBottom="5.0dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_marginTop="70.0dip"
+            android:background="@drawable/menu_invite_btn_selector"
+            android:gravity="center"
+            android:text="@string/exit"
+            android:textColor="#ff999994"
+            android:textSize="12.0sp" />-->
+    </LinearLayout>
+
+</ScrollView>

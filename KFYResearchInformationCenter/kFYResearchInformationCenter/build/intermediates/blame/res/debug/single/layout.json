@@ -1,0 +1,858 @@
+[
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_big_media.xml",
+        "source": "C:\\Users\\haoran\\.android\\build-cache\\7e39e7af88cfdefbca85ada5267583c219b8a796\\output\\res\\layout\\notification_template_big_media.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\activity_question_details.xml",
+        "source": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\activity_question_details.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\item_office.xml",
+        "source": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\item_office.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_home.xml",
+        "source": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\fragment_home.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple_overlay_action_mode.xml",
+        "source": "C:\\Users\\lenovo\\.android\\build-cache\\8959807ad9f5a7a148c0fc8de16ebcdfed73d948\\output\\res\\layout\\abc_screen_simple_overlay_action_mode.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\activity_lxdk.xml",
+        "source": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\activity_lxdk.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_comment.xml",
+        "source": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\dialog_comment.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_dropdown_item_icons_2line.xml",
+        "source": "C:\\Users\\lenovo\\.android\\build-cache\\8959807ad9f5a7a148c0fc8de16ebcdfed73d948\\output\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\item_office1.xml",
+        "source": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\item_office1.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_singlechoice_material.xml",
+        "source": "C:\\Users\\haoran\\.android\\build-cache\\7e39e7af88cfdefbca85ada5267583c219b8a796\\output\\res\\layout\\select_dialog_singlechoice_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_material.xml",
+        "source": "C:\\Users\\haoran\\.android\\build-cache\\7e39e7af88cfdefbca85ada5267583c219b8a796\\output\\res\\layout\\abc_alert_dialog_material.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\pull_to_refresh_header_vertical.xml",
+        "source": "F:\\Study\\bishe\\KFYResearchInformationCenter\\library\\build\\intermediates\\bundles\\default\\res\\layout\\pull_to_refresh_header_vertical.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_item_layout.xml",
+        "source": "C:\\Users\\lenovo\\.android\\build-cache\\8959807ad9f5a7a148c0fc8de16ebcdfed73d948\\output\\res\\layout\\abc_popup_menu_item_layout.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\menu_item_version.xml",
+        "source": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\menu_item_version.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_add.xml",
+        "source": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\fragment_add.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_qna_list.xml",
+        "source": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\fragment_qna_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\test1.xml",
+        "source": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\test1.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\activity_welcom.xml",
+        "source": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\activity_welcom.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view_list_item.xml",
+        "source": "C:\\Users\\haoran\\.android\\build-cache\\7e39e7af88cfdefbca85ada5267583c219b8a796\\output\\res\\layout\\abc_activity_chooser_view_list_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\menu_item_wifi.xml",
+        "source": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\menu_item_wifi.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\activity_lxdk.xml",
+        "source": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\activity_lxdk.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\pull_to_refresh_header_vertical.xml",
+        "source": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\library\\build\\intermediates\\bundles\\default\\res\\layout\\pull_to_refresh_header_vertical.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\item_comment.xml",
+        "source": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\item_comment.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\test1.xml",
+        "source": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\test1.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\item_office.xml",
+        "source": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\item_office.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\test.xml",
+        "source": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\test.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\abc_dialog_title_material.xml",
+        "source": "C:\\Users\\lenovo\\.android\\build-cache\\8959807ad9f5a7a148c0fc8de16ebcdfed73d948\\output\\res\\layout\\abc_dialog_title_material.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_lines.xml",
+        "source": "C:\\Users\\lenovo\\.android\\build-cache\\8959807ad9f5a7a148c0fc8de16ebcdfed73d948\\output\\res\\layout\\notification_template_lines.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_add.xml",
+        "source": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\fragment_add.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_layout.xml",
+        "source": "C:\\Users\\lenovo\\.android\\build-cache\\8959807ad9f5a7a148c0fc8de16ebcdfed73d948\\output\\res\\layout\\abc_list_menu_item_layout.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\activity_capture.xml",
+        "source": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\activity_capture.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\support_simple_spinner_dropdown_item.xml",
+        "source": "C:\\Users\\haoran\\.android\\build-cache\\7e39e7af88cfdefbca85ada5267583c219b8a796\\output\\res\\layout\\support_simple_spinner_dropdown_item.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\item_office1.xml",
+        "source": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\item_office1.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\pull_to_refresh_header_horizontal.xml",
+        "source": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\library\\build\\intermediates\\bundles\\default\\res\\layout\\pull_to_refresh_header_horizontal.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_home.xml",
+        "source": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\fragment_home.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\notification_media_action.xml",
+        "source": "C:\\Users\\lenovo\\.android\\build-cache\\8959807ad9f5a7a148c0fc8de16ebcdfed73d948\\output\\res\\layout\\notification_media_action.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_view.xml",
+        "source": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\dialog_view.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\jpush_popwin_layout.xml",
+        "source": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\jpush_popwin_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\activity_ask_question.xml",
+        "source": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\activity_ask_question.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\slidingmenumain.xml",
+        "source": "F:\\Study\\bishe\\KFYResearchInformationCenter\\slidingMenuLib\\build\\intermediates\\bundles\\default\\res\\layout\\slidingmenumain.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\item_answer_list1.xml",
+        "source": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\item_answer_list1.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_multichoice_material.xml",
+        "source": "C:\\Users\\lenovo\\.android\\build-cache\\8959807ad9f5a7a148c0fc8de16ebcdfed73d948\\output\\res\\layout\\select_dialog_multichoice_material.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\item_hotwords.xml",
+        "source": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\item_hotwords.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\activity_welcom.xml",
+        "source": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\activity_welcom.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\activity_baojiang.xml",
+        "source": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\activity_baojiang.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_radio.xml",
+        "source": "C:\\Users\\lenovo\\.android\\build-cache\\8959807ad9f5a7a148c0fc8de16ebcdfed73d948\\output\\res\\layout\\abc_list_menu_item_radio.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\activity_patent.xml",
+        "source": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\activity_patent.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_big_media_narrow.xml",
+        "source": "C:\\Users\\haoran\\.android\\build-cache\\7e39e7af88cfdefbca85ada5267583c219b8a796\\output\\res\\layout\\notification_template_big_media_narrow.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\abc_select_dialog_material.xml",
+        "source": "C:\\Users\\haoran\\.android\\build-cache\\7e39e7af88cfdefbca85ada5267583c219b8a796\\output\\res\\layout\\abc_select_dialog_material.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view.xml",
+        "source": "C:\\Users\\lenovo\\.android\\build-cache\\8959807ad9f5a7a148c0fc8de16ebcdfed73d948\\output\\res\\layout\\abc_activity_chooser_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\item_question_by_key.xml",
+        "source": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\item_question_by_key.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\activity_finding_list.xml",
+        "source": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\activity_finding_list.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\activity_home.xml",
+        "source": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\activity_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\menu_item_mysignup.xml",
+        "source": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\menu_item_mysignup.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\item_my_question.xml",
+        "source": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\item_my_question.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\activity_question_details1.xml",
+        "source": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\activity_question_details1.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\popup_menu.xml",
+        "source": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\popup_menu.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_item_layout.xml",
+        "source": "C:\\Users\\lenovo\\.android\\build-cache\\8959807ad9f5a7a148c0fc8de16ebcdfed73d948\\output\\res\\layout\\abc_action_menu_item_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_office.xml",
+        "source": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\fragment_office.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\activity_search.xml",
+        "source": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\activity_search.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\activity_ask_question.xml",
+        "source": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\activity_ask_question.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\test.xml",
+        "source": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\test.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_wifi.xml",
+        "source": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\fragment_wifi.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\activity_message_details.xml",
+        "source": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\activity_message_details.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_toolbar.xml",
+        "source": "C:\\Users\\lenovo\\.android\\build-cache\\8959807ad9f5a7a148c0fc8de16ebcdfed73d948\\output\\res\\layout\\abc_screen_toolbar.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_media.xml",
+        "source": "C:\\Users\\haoran\\.android\\build-cache\\7e39e7af88cfdefbca85ada5267583c219b8a796\\output\\res\\layout\\notification_template_media.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\item_comment.xml",
+        "source": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\item_comment.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\activity_login.xml",
+        "source": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\layout_sticky_header_view.xml",
+        "source": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\layout_sticky_header_view.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple.xml",
+        "source": "C:\\Users\\lenovo\\.android\\build-cache\\8959807ad9f5a7a148c0fc8de16ebcdfed73d948\\output\\res\\layout\\abc_screen_simple.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\main_left_layout.xml",
+        "source": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\main_left_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\menu_item_setting.xml",
+        "source": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\menu_item_setting.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_comment.xml",
+        "source": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\dialog_comment.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_setting.xml",
+        "source": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\fragment_setting.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\activity_mycollect.xml",
+        "source": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\activity_mycollect.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_time.xml",
+        "source": "C:\\Users\\haoran\\.android\\build-cache\\7e39e7af88cfdefbca85ada5267583c219b8a796\\output\\res\\layout\\notification_template_part_time.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple_overlay_action_mode.xml",
+        "source": "C:\\Users\\haoran\\.android\\build-cache\\7e39e7af88cfdefbca85ada5267583c219b8a796\\output\\res\\layout\\abc_screen_simple_overlay_action_mode.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_view_list_nav_layout.xml",
+        "source": "C:\\Users\\haoran\\.android\\build-cache\\7e39e7af88cfdefbca85ada5267583c219b8a796\\output\\res\\layout\\abc_action_bar_view_list_nav_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
+        "source": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\activity_comment_list.xml",
+        "source": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\activity_comment_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\item_answer_list.xml",
+        "source": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\item_answer_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\menu_item_sign_in.xml",
+        "source": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\menu_item_sign_in.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\item_news.xml",
+        "source": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\item_news.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\activity_comment_list.xml",
+        "source": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\activity_comment_list.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\menu_item_sign_in.xml",
+        "source": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\menu_item_sign_in.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view_list_item.xml",
+        "source": "C:\\Users\\lenovo\\.android\\build-cache\\8959807ad9f5a7a148c0fc8de16ebcdfed73d948\\output\\res\\layout\\abc_activity_chooser_view_list_item.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\abc_select_dialog_material.xml",
+        "source": "C:\\Users\\lenovo\\.android\\build-cache\\8959807ad9f5a7a148c0fc8de16ebcdfed73d948\\output\\res\\layout\\abc_select_dialog_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple.xml",
+        "source": "C:\\Users\\haoran\\.android\\build-cache\\7e39e7af88cfdefbca85ada5267583c219b8a796\\output\\res\\layout\\abc_screen_simple.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\abc_expanded_menu_layout.xml",
+        "source": "C:\\Users\\lenovo\\.android\\build-cache\\8959807ad9f5a7a148c0fc8de16ebcdfed73d948\\output\\res\\layout\\abc_expanded_menu_layout.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\activity_office_info.xml",
+        "source": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\activity_office_info.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\activity_my_question.xml",
+        "source": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\activity_my_question.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\menu_item_add_devices.xml",
+        "source": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\menu_item_add_devices.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_item_layout.xml",
+        "source": "C:\\Users\\haoran\\.android\\build-cache\\7e39e7af88cfdefbca85ada5267583c219b8a796\\output\\res\\layout\\abc_popup_menu_item_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_up_container.xml",
+        "source": "C:\\Users\\haoran\\.android\\build-cache\\7e39e7af88cfdefbca85ada5267583c219b8a796\\output\\res\\layout\\abc_action_bar_up_container.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\activity_qr.xml",
+        "source": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\activity_qr.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\abc_simple_dropdown_hint.xml",
+        "source": "C:\\Users\\lenovo\\.android\\build-cache\\8959807ad9f5a7a148c0fc8de16ebcdfed73d948\\output\\res\\layout\\abc_simple_dropdown_hint.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\activity_office_info.xml",
+        "source": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\activity_office_info.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\item_qna_list.xml",
+        "source": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\item_qna_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\layout_sticky_header_view.xml",
+        "source": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\layout_sticky_header_view.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\main_left_fragment.xml",
+        "source": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\main_left_fragment.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\slidingmenumain.xml",
+        "source": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\slidingMenuLib\\build\\intermediates\\bundles\\default\\res\\layout\\slidingmenumain.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\menu_item_home.xml",
+        "source": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\menu_item_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_content_include.xml",
+        "source": "C:\\Users\\haoran\\.android\\build-cache\\7e39e7af88cfdefbca85ada5267583c219b8a796\\output\\res\\layout\\abc_screen_content_include.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\infocenter_frag.xml",
+        "source": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\infocenter_frag.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_finding.xml",
+        "source": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\fragment_finding.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_lines.xml",
+        "source": "C:\\Users\\haoran\\.android\\build-cache\\7e39e7af88cfdefbca85ada5267583c219b8a796\\output\\res\\layout\\notification_template_lines.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_notification.xml",
+        "source": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\fragment_notification.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_office1.xml",
+        "source": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\fragment_office1.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\activity_home.xml",
+        "source": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\activity_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_layout.xml",
+        "source": "C:\\Users\\haoran\\.android\\build-cache\\7e39e7af88cfdefbca85ada5267583c219b8a796\\output\\res\\layout\\abc_action_menu_layout.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_chronometer.xml",
+        "source": "C:\\Users\\lenovo\\.android\\build-cache\\8959807ad9f5a7a148c0fc8de16ebcdfed73d948\\output\\res\\layout\\notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\menu_item_home.xml",
+        "source": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\menu_item_home.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\activity_search.xml",
+        "source": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\activity_search.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\jpush_webview_layout.xml",
+        "source": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\jpush_webview_layout.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\activity_ask_question_bykey.xml",
+        "source": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\activity_ask_question_bykey.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_view_list_nav_layout.xml",
+        "source": "C:\\Users\\lenovo\\.android\\build-cache\\8959807ad9f5a7a148c0fc8de16ebcdfed73d948\\output\\res\\layout\\abc_action_bar_view_list_nav_layout.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\activity_question_details1.xml",
+        "source": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\activity_question_details1.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_up_container.xml",
+        "source": "C:\\Users\\lenovo\\.android\\build-cache\\8959807ad9f5a7a148c0fc8de16ebcdfed73d948\\output\\res\\layout\\abc_action_bar_up_container.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\activity_capture.xml",
+        "source": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\activity_capture.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_layout.xml",
+        "source": "C:\\Users\\haoran\\.android\\build-cache\\7e39e7af88cfdefbca85ada5267583c219b8a796\\output\\res\\layout\\abc_list_menu_item_layout.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_icon.xml",
+        "source": "C:\\Users\\lenovo\\.android\\build-cache\\8959807ad9f5a7a148c0fc8de16ebcdfed73d948\\output\\res\\layout\\abc_list_menu_item_icon.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\notification_media_action.xml",
+        "source": "C:\\Users\\haoran\\.android\\build-cache\\7e39e7af88cfdefbca85ada5267583c219b8a796\\output\\res\\layout\\notification_media_action.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_view.xml",
+        "source": "C:\\Users\\haoran\\.android\\build-cache\\7e39e7af88cfdefbca85ada5267583c219b8a796\\output\\res\\layout\\abc_search_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_radio.xml",
+        "source": "C:\\Users\\haoran\\.android\\build-cache\\7e39e7af88cfdefbca85ada5267583c219b8a796\\output\\res\\layout\\abc_list_menu_item_radio.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_item_material.xml",
+        "source": "C:\\Users\\haoran\\.android\\build-cache\\7e39e7af88cfdefbca85ada5267583c219b8a796\\output\\res\\layout\\select_dialog_item_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\abc_dialog_title_material.xml",
+        "source": "C:\\Users\\haoran\\.android\\build-cache\\7e39e7af88cfdefbca85ada5267583c219b8a796\\output\\res\\layout\\abc_dialog_title_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\item_list_add.xml",
+        "source": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\item_list_add.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_title_item.xml",
+        "source": "C:\\Users\\haoran\\.android\\build-cache\\7e39e7af88cfdefbca85ada5267583c219b8a796\\output\\res\\layout\\abc_action_bar_title_item.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_close_item_material.xml",
+        "source": "C:\\Users\\lenovo\\.android\\build-cache\\8959807ad9f5a7a148c0fc8de16ebcdfed73d948\\output\\res\\layout\\abc_action_mode_close_item_material.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_guide.xml",
+        "source": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\fragment_guide.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\abc_expanded_menu_layout.xml",
+        "source": "C:\\Users\\haoran\\.android\\build-cache\\7e39e7af88cfdefbca85ada5267583c219b8a796\\output\\res\\layout\\abc_expanded_menu_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\main_left_fragment.xml",
+        "source": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\main_left_fragment.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\title_view.xml",
+        "source": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\title_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\menu_item_version.xml",
+        "source": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\menu_item_version.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\notification_media_cancel_action.xml",
+        "source": "C:\\Users\\haoran\\.android\\build-cache\\7e39e7af88cfdefbca85ada5267583c219b8a796\\output\\res\\layout\\notification_media_cancel_action.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\title_view.xml",
+        "source": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\title_view.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\activity_qr.xml",
+        "source": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\activity_qr.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_dropdown_item_icons_2line.xml",
+        "source": "C:\\Users\\haoran\\.android\\build-cache\\7e39e7af88cfdefbca85ada5267583c219b8a796\\output\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\item_answer_list1.xml",
+        "source": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\item_answer_list1.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_checkbox.xml",
+        "source": "C:\\Users\\lenovo\\.android\\build-cache\\8959807ad9f5a7a148c0fc8de16ebcdfed73d948\\output\\res\\layout\\abc_list_menu_item_checkbox.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_toolbar.xml",
+        "source": "C:\\Users\\haoran\\.android\\build-cache\\7e39e7af88cfdefbca85ada5267583c219b8a796\\output\\res\\layout\\abc_screen_toolbar.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\activity_baojiang.xml",
+        "source": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\activity_baojiang.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\support_simple_spinner_dropdown_item.xml",
+        "source": "C:\\Users\\lenovo\\.android\\build-cache\\8959807ad9f5a7a148c0fc8de16ebcdfed73d948\\output\\res\\layout\\support_simple_spinner_dropdown_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\menu_item_exit.xml",
+        "source": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\menu_item_exit.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_multichoice_material.xml",
+        "source": "C:\\Users\\haoran\\.android\\build-cache\\7e39e7af88cfdefbca85ada5267583c219b8a796\\output\\res\\layout\\select_dialog_multichoice_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view.xml",
+        "source": "C:\\Users\\haoran\\.android\\build-cache\\7e39e7af88cfdefbca85ada5267583c219b8a796\\output\\res\\layout\\abc_activity_chooser_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\infocenter_frag.xml",
+        "source": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\infocenter_frag.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_item_layout.xml",
+        "source": "C:\\Users\\haoran\\.android\\build-cache\\7e39e7af88cfdefbca85ada5267583c219b8a796\\output\\res\\layout\\abc_action_menu_item_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\activity_ask_question_bykey.xml",
+        "source": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\activity_ask_question_bykey.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\menu_item_add_devices.xml",
+        "source": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\menu_item_add_devices.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_chronometer.xml",
+        "source": "C:\\Users\\haoran\\.android\\build-cache\\7e39e7af88cfdefbca85ada5267583c219b8a796\\output\\res\\layout\\notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_office1.xml",
+        "source": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\fragment_office1.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\jpush_popwin_layout.xml",
+        "source": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\jpush_popwin_layout.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_qna_list.xml",
+        "source": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\fragment_qna_list.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_big_media_narrow.xml",
+        "source": "C:\\Users\\lenovo\\.android\\build-cache\\8959807ad9f5a7a148c0fc8de16ebcdfed73d948\\output\\res\\layout\\notification_template_big_media_narrow.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\jpush_webview_layout.xml",
+        "source": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\jpush_webview_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\item_search.xml",
+        "source": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\item_search.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\activity_version.xml",
+        "source": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\activity_version.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_version.xml",
+        "source": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\fragment_version.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\item_list_add.xml",
+        "source": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\item_list_add.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\activity_version.xml",
+        "source": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\activity_version.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\item_question_by_key.xml",
+        "source": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\item_question_by_key.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\abc_simple_dropdown_hint.xml",
+        "source": "C:\\Users\\haoran\\.android\\build-cache\\7e39e7af88cfdefbca85ada5267583c219b8a796\\output\\res\\layout\\abc_simple_dropdown_hint.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_setting.xml",
+        "source": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\fragment_setting.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_bar.xml",
+        "source": "C:\\Users\\lenovo\\.android\\build-cache\\8959807ad9f5a7a148c0fc8de16ebcdfed73d948\\output\\res\\layout\\abc_action_mode_bar.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_guide.xml",
+        "source": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\fragment_guide.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\item_search.xml",
+        "source": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\item_search.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\main_left_layout.xml",
+        "source": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\main_left_layout.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\main_title.xml",
+        "source": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\main_title.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_content_include.xml",
+        "source": "C:\\Users\\lenovo\\.android\\build-cache\\8959807ad9f5a7a148c0fc8de16ebcdfed73d948\\output\\res\\layout\\abc_screen_content_include.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
+        "source": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_time.xml",
+        "source": "C:\\Users\\lenovo\\.android\\build-cache\\8959807ad9f5a7a148c0fc8de16ebcdfed73d948\\output\\res\\layout\\notification_template_part_time.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_icon.xml",
+        "source": "C:\\Users\\haoran\\.android\\build-cache\\7e39e7af88cfdefbca85ada5267583c219b8a796\\output\\res\\layout\\abc_list_menu_item_icon.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_bar.xml",
+        "source": "C:\\Users\\haoran\\.android\\build-cache\\7e39e7af88cfdefbca85ada5267583c219b8a796\\output\\res\\layout\\abc_action_mode_bar.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_layout.xml",
+        "source": "C:\\Users\\lenovo\\.android\\build-cache\\8959807ad9f5a7a148c0fc8de16ebcdfed73d948\\output\\res\\layout\\abc_action_menu_layout.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\notification_media_cancel_action.xml",
+        "source": "C:\\Users\\lenovo\\.android\\build-cache\\8959807ad9f5a7a148c0fc8de16ebcdfed73d948\\output\\res\\layout\\notification_media_cancel_action.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\menu_item_wifi.xml",
+        "source": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\menu_item_wifi.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_notification.xml",
+        "source": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\fragment_notification.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\activity_login.xml",
+        "source": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\activity_my_question.xml",
+        "source": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\activity_my_question.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_finding.xml",
+        "source": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\fragment_finding.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\popup_menu.xml",
+        "source": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\popup_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\activity_message_details.xml",
+        "source": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\activity_message_details.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_wifi.xml",
+        "source": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\fragment_wifi.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\item_collect.xml",
+        "source": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\item_collect.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\item_news.xml",
+        "source": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\item_news.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_title_item.xml",
+        "source": "C:\\Users\\lenovo\\.android\\build-cache\\8959807ad9f5a7a148c0fc8de16ebcdfed73d948\\output\\res\\layout\\abc_action_bar_title_item.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_view.xml",
+        "source": "C:\\Users\\lenovo\\.android\\build-cache\\8959807ad9f5a7a148c0fc8de16ebcdfed73d948\\output\\res\\layout\\abc_search_view.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\item_qna_list.xml",
+        "source": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\item_qna_list.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_item_material.xml",
+        "source": "C:\\Users\\lenovo\\.android\\build-cache\\8959807ad9f5a7a148c0fc8de16ebcdfed73d948\\output\\res\\layout\\select_dialog_item_material.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\activity_finding_list.xml",
+        "source": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\activity_finding_list.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\sticky_list_office1.xml",
+        "source": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\sticky_list_office1.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\menu_item_setting.xml",
+        "source": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\menu_item_setting.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_office.xml",
+        "source": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\fragment_office.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\main_title.xml",
+        "source": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\main_title.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\activity_question_details.xml",
+        "source": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\activity_question_details.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\pull_to_refresh_header_horizontal.xml",
+        "source": "F:\\Study\\bishe\\KFYResearchInformationCenter\\library\\build\\intermediates\\bundles\\default\\res\\layout\\pull_to_refresh_header_horizontal.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\menu_item_mysignup.xml",
+        "source": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\menu_item_mysignup.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\sticky_list_office1.xml",
+        "source": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\sticky_list_office1.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_media.xml",
+        "source": "C:\\Users\\lenovo\\.android\\build-cache\\8959807ad9f5a7a148c0fc8de16ebcdfed73d948\\output\\res\\layout\\notification_template_media.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\menu_item_exit.xml",
+        "source": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\menu_item_exit.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_version.xml",
+        "source": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\fragment_version.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\item_my_question.xml",
+        "source": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\item_my_question.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\item_collect.xml",
+        "source": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\item_collect.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\activity_mycollect.xml",
+        "source": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\activity_mycollect.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\item_answer_list.xml",
+        "source": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\item_answer_list.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_big_media.xml",
+        "source": "C:\\Users\\lenovo\\.android\\build-cache\\8959807ad9f5a7a148c0fc8de16ebcdfed73d948\\output\\res\\layout\\notification_template_big_media.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_checkbox.xml",
+        "source": "C:\\Users\\haoran\\.android\\build-cache\\7e39e7af88cfdefbca85ada5267583c219b8a796\\output\\res\\layout\\abc_list_menu_item_checkbox.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_view.xml",
+        "source": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\dialog_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\item_hotwords.xml",
+        "source": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\item_hotwords.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_material.xml",
+        "source": "C:\\Users\\lenovo\\.android\\build-cache\\8959807ad9f5a7a148c0fc8de16ebcdfed73d948\\output\\res\\layout\\abc_alert_dialog_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\activity_patent.xml",
+        "source": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\activity_patent.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_close_item_material.xml",
+        "source": "C:\\Users\\haoran\\.android\\build-cache\\7e39e7af88cfdefbca85ada5267583c219b8a796\\output\\res\\layout\\abc_action_mode_close_item_material.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_singlechoice_material.xml",
+        "source": "C:\\Users\\lenovo\\.android\\build-cache\\8959807ad9f5a7a148c0fc8de16ebcdfed73d948\\output\\res\\layout\\select_dialog_singlechoice_material.xml"
+    }
+]

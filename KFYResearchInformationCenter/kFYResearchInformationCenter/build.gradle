@@ -1,0 +1,44 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.0"
+
+    defaultConfig {
+        applicationId "com.bjut.cyl.kfyrip.ui"
+        minSdkVersion 14
+        targetSdkVersion 26
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+    useLibrary 'org.apache.http.legacy'
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    compile project(':slidingMenuLib')
+    compile project(':library')
+    compile files('libs/jackson-all-1.9.11.jar')
+    compile files('libs/xUtils-2.6.14.jar')
+    compile files('libs/zxing.jar')
+    compile project(':onekeyshare')
+    compile 'com.alibaba:fastjson:1.1.47.android'
+    compile 'com.android.support:recyclerview-v7:26.0.0-alpha1'
+    compile 'com.android.support:support-v4:26.0.0-alpha1'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile files('libs/jcore-android_v1.1.3.jar')
+    compile files('libs/jpush-android_v3.0.6.jar')
+    compile 'com.google.code.gson:gson:2.2.4'
+    compile 'com.github.chrisbanes:PhotoView:1.2.6'
+}

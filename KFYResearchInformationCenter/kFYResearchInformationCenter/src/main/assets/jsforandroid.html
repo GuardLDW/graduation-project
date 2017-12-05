@@ -1,0 +1,22 @@
+<html>
+<head>
+    <script language="javascript">
+        /* This function is invoked by the activity */
+       function ResizeImages() { 
+                        var myimg,oldwidth;
+                        var maxwidth = 300; // UIWebView中显示的图片宽度
+                        for(i=0;i <document.images.length;i++){
+                        	myimg = document.images[i];
+                        	myimg.style.width = '';
+                        	myimg.style.height = 'auto';               
+                            if(myimg.width > maxwidth){
+                        		oldwidth = myimg.width;
+                        		myimg.width = maxwidth;
+                        	}
+                        }
+                 };
+                    document.getElementsByTagName('head')[0].appendChild(script);
+
+    </script>
+ </head>  
+</html>

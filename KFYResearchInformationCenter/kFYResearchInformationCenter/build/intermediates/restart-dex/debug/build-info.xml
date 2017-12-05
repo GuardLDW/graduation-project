@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    abi="x86"
+    api-level="24"
+    build-mode="FULL"
+    density="xhdpi"
+    format="10"
+    plugin-version="2.3.0"
+    timestamp="1511519942988"
+    token="-28015264606808920"
+    verifier="FULL_BUILD_REQUESTED" >
+
+    <task
+        name="javac"
+        duration="38580" />
+    <task
+        name="instant-run-dex"
+        duration="0" />
+    <task
+        name="instant-run-transform"
+        duration="12582" />
+    <task
+        name="verifier"
+        duration="7384" />
+
+    <artifact
+        location="F:\Study\bishe\KFYResearchInformationCenter\kFYResearchInformationCenter\build\intermediates\instant-run-resources\resources-debug.ir.ap_"
+        type="RESOURCES" />
+
+    <build
+        build-mode="FULL"
+        timestamp="1511519942988"
+        verifier="FULL_BUILD_REQUESTED" >
+        <artifact
+            location="F:\Study\bishe\KFYResearchInformationCenter\kFYResearchInformationCenter\build\intermediates\instant-run-resources\resources-debug.ir.ap_"
+            type="RESOURCES" />
+    </build>
+
+</instant-run>

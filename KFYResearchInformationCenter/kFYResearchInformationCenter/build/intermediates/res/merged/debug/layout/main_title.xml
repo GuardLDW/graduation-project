@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="44dip"
+    android:gravity="center_vertical"
+    android:padding="0.0px"
+    android:id="@+id/rl_title">
+
+    <ImageView
+        android:id="@+id/rlCommenTitleBG"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/title_bar" />
+
+    <TextView
+        android:id="@+id/ivTitleName"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:paddingLeft="96.0dip"
+        android:paddingRight="96.0dip"
+        android:singleLine="true"
+        android:text="@string/app_name" 
+        android:textColor="@color/black"
+        android:textSize="23sp"/>
+
+    <ImageButton
+        android:id="@+id/ivTitleBtnLeft"
+        android:layout_width="23dp"
+        android:layout_height="23dp"
+        android:background="@drawable/slide_btn_selector"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/ivTitleBtnRight"
+        android:layout_toEndOf="@+id/ivTitleBtnRight" />
+
+    <Button
+        android:id="@+id/ivTitleBtnRight"
+        android:layout_width="23dp"
+        android:layout_height="23dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/askquestion_btn_selector"
+        android:visibility="gone"/>
+    <ImageView
+        android:id="@+id/more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/more"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/btn_next_step"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@color/title_bar"
+        android:text="下一步" 
+        android:textColor="@color/next_step"
+        android:textSize="17sp"
+        android:layout_marginRight="5dp"
+        android:visibility="gone"/>
+
+</RelativeLayout>

@@ -1,0 +1,50 @@
+[
+    {
+        "outputFile": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-w360dp-v13\\values-w360dp-v13.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 54,
+                    "endOffset": 105
+                },
+                "from": {
+                    "file": "C:\\Users\\haoran\\.android\\build-cache\\7e39e7af88cfdefbca85ada5267583c219b8a796\\output\\res\\values-w360dp\\values-w360dp.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 294,
+                        "endColumn": 54,
+                        "endOffset": 344
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "outputFile": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-w360dp-v13\\values-w360dp-v13.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 54,
+                    "endOffset": 105
+                },
+                "from": {
+                    "file": "C:\\Users\\lenovo\\.android\\build-cache\\8959807ad9f5a7a148c0fc8de16ebcdfed73d948\\output\\res\\values-w360dp\\values-w360dp.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 294,
+                        "endColumn": 54,
+                        "endOffset": 344
+                    }
+                }
+            }
+        ]
+    }
+]

@@ -1,0 +1,3 @@
+include ':slidingMenuLib', ':sharesdk', ':onekeyshare'
+include ':library'
+include ':kFYResearchInformationCenter'

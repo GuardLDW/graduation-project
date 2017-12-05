@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/include1"
+        layout="@layout/main_title"
+        android:focusable="true" />
+
+    <Button
+        android:id="@+id/btn_write"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/btn_comment"
+        android:text="写" />
+
+    <Button
+        android:id="@+id/btn_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="评论" />
+
+    <TextView
+        android:id="@+id/question_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/include1"
+        android:textSize="@dimen/message_title_textsize" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/question_title" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/click_colon" />
+
+        <TextView
+            android:id="@+id/view_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/comment_colon" />
+
+        <TextView
+            android:id="@+id/answer_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/comment_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+   <com.handmark.pulltorefresh.library.PullToRefreshListView
+       xmlns:ptr="http://schemas.android.com/apk/res-auto"
+       android:id="@+id/lv_answer"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_above="@+id/btn_write"
+       android:layout_below="@+id/linearLayout1"
+       android:background="@color/white"
+       android:dividerHeight="1dp"
+       android:fadingEdge="none"
+       android:fastScrollEnabled="false"
+       android:footerDividersEnabled="false"
+       android:headerDividersEnabled="false"
+       android:smoothScrollbar="true"
+       ptr:ptrMode="both" />
+
+</RelativeLayout>

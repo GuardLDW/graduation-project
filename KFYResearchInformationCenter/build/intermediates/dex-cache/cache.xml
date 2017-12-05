@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="F:\Study\bishe\KFYResearchInformationCenter\kFYResearchInformationCenter\libs\jcore-android_v1.1.3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e872ea5454bca71af461e037dd07c4ca9e73dcf4">
+        <dex dex="F:\Study\bishe\KFYResearchInformationCenter\kFYResearchInformationCenter\build\intermediates\pre-dexed\debug\jcore-android_v1.1.3_d09c3b3a9668cb1e208ff5a69f8fdfac5460a8d1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="F:\Study\bishe\KFYResearchInformationCenter\onekeyshare\build\intermediates\bundles\default\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9a6fe785a8f231837f111a493964f3dd5716d8d0">
+        <dex dex="F:\Study\bishe\KFYResearchInformationCenter\kFYResearchInformationCenter\build\intermediates\pre-dexed\debug\classes_3d6a2a86e0ee71f06db088e5787552427d967c5c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="F:\Study\bishe\KFYResearchInformationCenter\kFYResearchInformationCenter\libs\jpush-android_v3.0.6.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="cc50cc7009c634f3222609dae2d60d5ad888015a">
+        <dex dex="F:\Study\bishe\KFYResearchInformationCenter\kFYResearchInformationCenter\build\intermediates\pre-dexed\debug\jpush-android_v3.0.6_3dd39370271776bd581ad1b09e27485412de9e71.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\lenovo\.android\build-cache\89e5752308c71f8a6ab4375f11ee208ea8696bd2\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e39dd45427d2ba136c82ed1946f80dd3dff16695">
+        <dex dex="F:\Study\bishe\KFYResearchInformationCenter\kFYResearchInformationCenter\build\intermediates\pre-dexed\debug\classes_d82c6c6323fb41518db2182b470894d2edb87f0e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="F:\Study\bishe\KFYResearchInformationCenter\sharesdk\build\intermediates\bundles\default\libs\ShareSDK-Core-2.7.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="98e51298718becc082b47c4b1974979c4e08140a">
+        <dex dex="F:\Study\bishe\KFYResearchInformationCenter\kFYResearchInformationCenter\build\intermediates\pre-dexed\debug\ShareSDK-Core-2.7.0_857581b275e35407c68f054e7bd4f0489994b0ca.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="F:\Study\bishe\KFYResearchInformationCenter\kFYResearchInformationCenter\libs\zxing.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="e88c14e6e7daa0fa65172a62b54ee6a16ff4162d">
+        <dex dex="F:\Study\bishe\KFYResearchInformationCenter\kFYResearchInformationCenter\build\intermediates\pre-dexed\debug\zxing_7f869c3a5f771deeb2b18bcbd15dc5074cd1e699.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\lenovo\.gradle\caches\modules-2\files-2.1\com.github.bumptech.glide\glide\3.7.0\9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4\glide-3.7.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4">
+        <dex dex="F:\Study\bishe\KFYResearchInformationCenter\kFYResearchInformationCenter\build\intermediates\pre-dexed\debug\glide-3.7.0_6847dc5645c19615c623fcdef96473b3b9ad1f8e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="F:\Study\bishe\KFYResearchInformationCenter\sharesdk\build\intermediates\bundles\default\libs\ShareSDK-Wechat-Favorite-2.7.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8faa7d6727df1d7dff196891f2cb47c68fe5ea7a">
+        <dex dex="F:\Study\bishe\KFYResearchInformationCenter\kFYResearchInformationCenter\build\intermediates\pre-dexed\debug\ShareSDK-Wechat-Favorite-2.7.0_dd7b35cc5ac9cdc85594a370c47f3e67968218f4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="F:\Study\bishe\KFYResearchInformationCenter\slidingMenuLib\build\intermediates\bundles\default\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="d137a7d8a490fe2bcf5f9db08af156933a288b61">
+        <dex dex="F:\Study\bishe\KFYResearchInformationCenter\kFYResearchInformationCenter\build\intermediates\pre-dexed\debug\classes_f3767acc9b0baba7b033c8427f5971986fc9e744.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="F:\Study\bishe\KFYResearchInformationCenter\sharesdk\build\intermediates\bundles\default\libs\ShareSDK-Wechat-Moments-2.7.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f038ecd06227f692425579ebca73bec63eb7d646">
+        <dex dex="F:\Study\bishe\KFYResearchInformationCenter\kFYResearchInformationCenter\build\intermediates\pre-dexed\debug\ShareSDK-Wechat-Moments-2.7.0_28c2c02b720c2751af3929783f449b1db341a43d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\lenovo\.gradle\caches\modules-2\files-2.1\com.alibaba\fastjson\1.1.47.android\943a71fb81da4a745be0096bd4fe8ecee79f23f2\fastjson-1.1.47.android.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="943a71fb81da4a745be0096bd4fe8ecee79f23f2">
+        <dex dex="F:\Study\bishe\KFYResearchInformationCenter\kFYResearchInformationCenter\build\intermediates\pre-dexed\debug\fastjson-1.1.47.android_bded236679f4170d245630e9052e43af99c20b60.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="F:\Study\bishe\KFYResearchInformationCenter\sharesdk\build\intermediates\bundles\default\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="cecde68b55d5088619ac4e9e77638f64f1acdbdc">
+        <dex dex="F:\Study\bishe\KFYResearchInformationCenter\kFYResearchInformationCenter\build\intermediates\pre-dexed\debug\classes_389cdbfb77b1ea66970a293f055861a3fcc3d879.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\lenovo\.android\build-cache\9594b8f4bda5d98bdc9c68458b91bcf17388d029\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="c4f45092eee6cdf1a5dbd597b2b6819be652ce2e">
+        <dex dex="F:\Study\bishe\KFYResearchInformationCenter\kFYResearchInformationCenter\build\intermediates\pre-dexed\debug\classes_75b4c67c106796bc5957fe19ea5ae32341c39e8d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="F:\Study\bishe\KFYResearchInformationCenter\sharesdk\build\intermediates\bundles\default\libs\MobCommons-2016.0301.1053.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="42e5ef02c5bf9c89ad03a28290e80ca79bc3410e">
+        <dex dex="F:\Study\bishe\KFYResearchInformationCenter\kFYResearchInformationCenter\build\intermediates\pre-dexed\debug\MobCommons-2016.0301.1053_c65894878cc324895b6944feb77b5dba53466e70.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\lenovo\.android\build-cache\8b985ad02b88fcfa74ee023032df31f6ee2a9718\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="9935891f23923f39d002087085d9696568a9f657">
+        <dex dex="F:\Study\bishe\KFYResearchInformationCenter\kFYResearchInformationCenter\build\intermediates\pre-dexed\debug\classes_9cd1ece59125a52463e5dd4c8e05a5cd508e8ac2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="F:\Study\bishe\KFYResearchInformationCenter\kFYResearchInformationCenter\libs\xUtils-2.6.14.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="f10c51f3e0732fdeefe6e104279a58e275879b6c">
+        <dex dex="F:\Study\bishe\KFYResearchInformationCenter\kFYResearchInformationCenter\build\intermediates\pre-dexed\debug\xUtils-2.6.14_a89e0981f4cffddb4cc29741f23303f362a0229a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="F:\Study\bishe\KFYResearchInformationCenter\kFYResearchInformationCenter\libs\jackson-all-1.9.11.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="62246d59c8188052433b28c5fbd50e4e71804f26">
+        <dex dex="F:\Study\bishe\KFYResearchInformationCenter\kFYResearchInformationCenter\build\intermediates\pre-dexed\debug\jackson-all-1.9.11_7549fc064903429a9ef6241599d77a929227b48e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="F:\Study\bishe\KFYResearchInformationCenter\sharesdk\build\intermediates\bundles\default\libs\MobTools-2016.0301.1053.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3b91563b6b573ed099e58e8cae72e352e678ad9f">
+        <dex dex="F:\Study\bishe\KFYResearchInformationCenter\kFYResearchInformationCenter\build\intermediates\pre-dexed\debug\MobTools-2016.0301.1053_d48031f0f0eb94d23fbaccf6b66d1e49b61eeadd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="F:\Study\Andriod\IDE\gradle\m2repository\com\google\code\gson\gson\2.2.4\gson-2.2.4.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a60a5e993c98c864010053cb901b7eab25306568">
+        <dex dex="F:\Study\bishe\KFYResearchInformationCenter\kFYResearchInformationCenter\build\intermediates\pre-dexed\debug\gson-2.2.4_765a7c77d7e7d374ac102a34ad5842433c4bd4e8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="F:\Study\bishe\KFYResearchInformationCenter\kFYResearchInformationCenter\libs\zxing.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e88c14e6e7daa0fa65172a62b54ee6a16ff4162d">
+        <dex dex="F:\Study\bishe\KFYResearchInformationCenter\kFYResearchInformationCenter\build\intermediates\pre-dexed\debug\zxing_7f869c3a5f771deeb2b18bcbd15dc5074cd1e699.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="F:\Study\bishe\KFYResearchInformationCenter\library\build\intermediates\bundles\default\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="0c0a24979e94dceeca57cbb0999a643a10883e6f">
+        <dex dex="F:\Study\bishe\KFYResearchInformationCenter\kFYResearchInformationCenter\build\intermediates\pre-dexed\debug\classes_4cfc66503526e974109907d760fd03e41efb88f3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="F:\Study\bishe\KFYResearchInformationCenter\sharesdk\build\intermediates\bundles\default\libs\ShareSDK-Wechat-Core-2.7.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="927a1694955196296c04d7dc49564da232f173cd">
+        <dex dex="F:\Study\bishe\KFYResearchInformationCenter\kFYResearchInformationCenter\build\intermediates\pre-dexed\debug\ShareSDK-Wechat-Core-2.7.0_6266ebc032624e1a8aef87391469ac95ead62a59.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\lenovo\.android\build-cache\ba20c0db265797de923ce847cf8f479497b4c7eb\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="8df0e365e40beb151bc42dee20817721a6cab7b0">
+        <dex dex="F:\Study\bishe\KFYResearchInformationCenter\kFYResearchInformationCenter\build\intermediates\pre-dexed\debug\classes_7cf5972a49f555b16f555e2aec3690485191e606.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="F:\Study\bishe\KFYResearchInformationCenter\sharesdk\build\intermediates\bundles\default\libs\ShareSDK-Core-2.7.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="98e51298718becc082b47c4b1974979c4e08140a">
+        <dex dex="F:\Study\bishe\KFYResearchInformationCenter\kFYResearchInformationCenter\build\intermediates\pre-dexed\debug\ShareSDK-Core-2.7.0_857581b275e35407c68f054e7bd4f0489994b0ca.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="F:\Study\bishe\KFYResearchInformationCenter\sharesdk\build\intermediates\bundles\default\libs\ShareSDK-Wechat-2.7.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="3aee129b47617e08cbb1b51098856345785e81fd">
+        <dex dex="F:\Study\bishe\KFYResearchInformationCenter\kFYResearchInformationCenter\build\intermediates\pre-dexed\debug\ShareSDK-Wechat-2.7.0_8080df2222db048b0ab438f760732b6beaa730d6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="F:\Study\bishe\KFYResearchInformationCenter\sharesdk\build\intermediates\bundles\default\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="cecde68b55d5088619ac4e9e77638f64f1acdbdc">
+        <dex dex="F:\Study\bishe\KFYResearchInformationCenter\kFYResearchInformationCenter\build\intermediates\pre-dexed\debug\classes_389cdbfb77b1ea66970a293f055861a3fcc3d879.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="F:\Study\bishe\KFYResearchInformationCenter\onekeyshare\build\intermediates\bundles\default\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="9a6fe785a8f231837f111a493964f3dd5716d8d0">
+        <dex dex="F:\Study\bishe\KFYResearchInformationCenter\kFYResearchInformationCenter\build\intermediates\pre-dexed\debug\classes_3d6a2a86e0ee71f06db088e5787552427d967c5c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="F:\Study\bishe\KFYResearchInformationCenter\sharesdk\build\intermediates\bundles\default\libs\MobCommons-2016.0301.1053.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="42e5ef02c5bf9c89ad03a28290e80ca79bc3410e">
+        <dex dex="F:\Study\bishe\KFYResearchInformationCenter\kFYResearchInformationCenter\build\intermediates\pre-dexed\debug\MobCommons-2016.0301.1053_c65894878cc324895b6944feb77b5dba53466e70.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="F:\Study\bishe\KFYResearchInformationCenter\kFYResearchInformationCenter\libs\jpush-android_v3.0.6.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="cc50cc7009c634f3222609dae2d60d5ad888015a">
+        <dex dex="F:\Study\bishe\KFYResearchInformationCenter\kFYResearchInformationCenter\build\intermediates\pre-dexed\debug\jpush-android_v3.0.6_3dd39370271776bd581ad1b09e27485412de9e71.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="F:\Study\bishe\KFYResearchInformationCenter\sharesdk\build\intermediates\bundles\default\libs\ShareSDK-Wechat-Moments-2.7.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="f038ecd06227f692425579ebca73bec63eb7d646">
+        <dex dex="F:\Study\bishe\KFYResearchInformationCenter\kFYResearchInformationCenter\build\intermediates\pre-dexed\debug\ShareSDK-Wechat-Moments-2.7.0_28c2c02b720c2751af3929783f449b1db341a43d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\lenovo\.android\build-cache\89e5752308c71f8a6ab4375f11ee208ea8696bd2\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="e39dd45427d2ba136c82ed1946f80dd3dff16695">
+        <dex dex="F:\Study\bishe\KFYResearchInformationCenter\kFYResearchInformationCenter\build\intermediates\pre-dexed\debug\classes_d82c6c6323fb41518db2182b470894d2edb87f0e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\lenovo\.android\build-cache\51846b5a182f1758b0699aaa1816ea6c4c6b13e1\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="fcd01fd11233459f546c437ec927e9b61bf7caf1">
+        <dex dex="F:\Study\bishe\KFYResearchInformationCenter\kFYResearchInformationCenter\build\intermediates\pre-dexed\debug\classes_9fb7a12914cd591ccd1b40759f9a359dfa797279.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="F:\Study\bishe\KFYResearchInformationCenter\kFYResearchInformationCenter\libs\jcore-android_v1.1.3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="e872ea5454bca71af461e037dd07c4ca9e73dcf4">
+        <dex dex="F:\Study\bishe\KFYResearchInformationCenter\kFYResearchInformationCenter\build\intermediates\pre-dexed\debug\jcore-android_v1.1.3_d09c3b3a9668cb1e208ff5a69f8fdfac5460a8d1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="F:\Study\Andriod\IDE\gradle\m2repository\com\google\code\gson\gson\2.2.4\gson-2.2.4.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="a60a5e993c98c864010053cb901b7eab25306568">
+        <dex dex="F:\Study\bishe\KFYResearchInformationCenter\kFYResearchInformationCenter\build\intermediates\pre-dexed\debug\gson-2.2.4_765a7c77d7e7d374ac102a34ad5842433c4bd4e8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="F:\Study\bishe\Sdk\extras\android\m2repository\com\android\support\support-annotations\26.0.0-alpha1\support-annotations-26.0.0-alpha1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="023ee503b631f69511e335a061ea008f8da60f40">
+        <dex dex="F:\Study\bishe\KFYResearchInformationCenter\kFYResearchInformationCenter\build\intermediates\pre-dexed\debug\support-annotations-26.0.0-alpha1_53805a275fba1d45cec49fe9c015ec653c9684ed.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\lenovo\.gradle\caches\modules-2\files-2.1\com.alibaba\fastjson\1.1.47.android\943a71fb81da4a745be0096bd4fe8ecee79f23f2\fastjson-1.1.47.android.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="943a71fb81da4a745be0096bd4fe8ecee79f23f2">
+        <dex dex="F:\Study\bishe\KFYResearchInformationCenter\kFYResearchInformationCenter\build\intermediates\pre-dexed\debug\fastjson-1.1.47.android_bded236679f4170d245630e9052e43af99c20b60.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\lenovo\.gradle\caches\modules-2\files-2.1\com.github.bumptech.glide\glide\3.7.0\9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4\glide-3.7.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4">
+        <dex dex="F:\Study\bishe\KFYResearchInformationCenter\kFYResearchInformationCenter\build\intermediates\pre-dexed\debug\glide-3.7.0_6847dc5645c19615c623fcdef96473b3b9ad1f8e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\lenovo\.android\build-cache\40ae6ada07424bf5bac7d1d958e6c21ca62f1c6c\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="2e92aa0163544a804a0b34f169ca61801770839a">
+        <dex dex="F:\Study\bishe\KFYResearchInformationCenter\kFYResearchInformationCenter\build\intermediates\pre-dexed\debug\classes_ba7eb92325dc2c733984d28eb1551210977f320e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\lenovo\.android\build-cache\8959807ad9f5a7a148c0fc8de16ebcdfed73d948\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="4486e953d1f35f8ccab098b1dd67146366d5f731">
+        <dex dex="F:\Study\bishe\KFYResearchInformationCenter\kFYResearchInformationCenter\build\intermediates\pre-dexed\debug\classes_8403315df5abc478f48c6d9bd3dc48d7d5771887.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="F:\Study\bishe\KFYResearchInformationCenter\slidingMenuLib\build\intermediates\bundles\default\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d137a7d8a490fe2bcf5f9db08af156933a288b61">
+        <dex dex="F:\Study\bishe\KFYResearchInformationCenter\kFYResearchInformationCenter\build\intermediates\pre-dexed\debug\classes_f3767acc9b0baba7b033c8427f5971986fc9e744.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\lenovo\.android\build-cache\ddd251d529156888be8ecf3df21a0b1168b7380e\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="18d31838aa4fcc768a8a0516e22cc13b94655d89">
+        <dex dex="F:\Study\bishe\KFYResearchInformationCenter\kFYResearchInformationCenter\build\intermediates\pre-dexed\debug\classes_c98c2a00fd2b10e6bbea2c3c41f4861ea6a09ff1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="F:\Study\bishe\KFYResearchInformationCenter\sharesdk\build\intermediates\bundles\default\libs\MobTools-2016.0301.1053.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="3b91563b6b573ed099e58e8cae72e352e678ad9f">
+        <dex dex="F:\Study\bishe\KFYResearchInformationCenter\kFYResearchInformationCenter\build\intermediates\pre-dexed\debug\MobTools-2016.0301.1053_d48031f0f0eb94d23fbaccf6b66d1e49b61eeadd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="F:\Study\bishe\KFYResearchInformationCenter\kFYResearchInformationCenter\libs\xUtils-2.6.14.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f10c51f3e0732fdeefe6e104279a58e275879b6c">
+        <dex dex="F:\Study\bishe\KFYResearchInformationCenter\kFYResearchInformationCenter\build\intermediates\pre-dexed\debug\xUtils-2.6.14_a89e0981f4cffddb4cc29741f23303f362a0229a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="F:\Study\bishe\KFYResearchInformationCenter\kFYResearchInformationCenter\libs\jackson-all-1.9.11.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="62246d59c8188052433b28c5fbd50e4e71804f26">
+        <dex dex="F:\Study\bishe\KFYResearchInformationCenter\kFYResearchInformationCenter\build\intermediates\pre-dexed\debug\jackson-all-1.9.11_7549fc064903429a9ef6241599d77a929227b48e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="F:\Study\bishe\KFYResearchInformationCenter\sharesdk\build\intermediates\bundles\default\libs\ShareSDK-Wechat-Favorite-2.7.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="8faa7d6727df1d7dff196891f2cb47c68fe5ea7a">
+        <dex dex="F:\Study\bishe\KFYResearchInformationCenter\kFYResearchInformationCenter\build\intermediates\pre-dexed\debug\ShareSDK-Wechat-Favorite-2.7.0_dd7b35cc5ac9cdc85594a370c47f3e67968218f4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="F:\Study\bishe\KFYResearchInformationCenter\library\build\intermediates\bundles\default\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="0c0a24979e94dceeca57cbb0999a643a10883e6f">
+        <dex dex="F:\Study\bishe\KFYResearchInformationCenter\kFYResearchInformationCenter\build\intermediates\pre-dexed\debug\classes_4cfc66503526e974109907d760fd03e41efb88f3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="F:\Study\bishe\KFYResearchInformationCenter\sharesdk\build\intermediates\bundles\default\libs\ShareSDK-Wechat-Core-2.7.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="927a1694955196296c04d7dc49564da232f173cd">
+        <dex dex="F:\Study\bishe\KFYResearchInformationCenter\kFYResearchInformationCenter\build\intermediates\pre-dexed\debug\ShareSDK-Wechat-Core-2.7.0_6266ebc032624e1a8aef87391469ac95ead62a59.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="F:\Study\bishe\KFYResearchInformationCenter\sharesdk\build\intermediates\bundles\default\libs\ShareSDK-Wechat-2.7.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3aee129b47617e08cbb1b51098856345785e81fd">
+        <dex dex="F:\Study\bishe\KFYResearchInformationCenter\kFYResearchInformationCenter\build\intermediates\pre-dexed\debug\ShareSDK-Wechat-2.7.0_8080df2222db048b0ab438f760732b6beaa730d6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\lenovo\.android\build-cache\8aefc0ddb6568b422d0a7733fae98602e3bf2952\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="F:\Study\bishe\KFYResearchInformationCenter\kFYResearchInformationCenter\build\intermediates\pre-dexed\debug\classes_bb7a182ca42e4618fa3357538efb1a53dd7798cd.jar" />
+    </item>
+
+</items>

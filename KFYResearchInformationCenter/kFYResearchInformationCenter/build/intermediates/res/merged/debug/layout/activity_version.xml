@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/include1"
+        layout="@layout/main_title"
+        android:focusable="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_marginTop="43dp"
+        android:src="@drawable/app_logo"
+        android:layout_below="@+id/include1"
+        android:layout_alignLeft="@+id/textView9"
+        android:layout_alignStart="@+id/textView9" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="科研助手"
+        android:id="@+id/textView9"
+        android:textSize="20sp"
+        android:textIsSelectable="false"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="V1.0"
+        android:id="@+id/tv_version"
+        android:layout_below="@+id/textView9"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="软件学院 研发与维护"
+        android:id="@+id/tv_call"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="10dp"
+        android:layout_above="@+id/textView11"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="right"
+        android:textColor="#0333ff"
+        android:layout_marginBottom="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="艺术设计学院 设计"
+        android:id="@+id/textView11"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="right"
+        android:layout_marginBottom="25dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="科学发展研究院 版权所有"
+        android:id="@+id/textView13"
+        android:layout_above="@+id/tv_call"
+        android:layout_alignLeft="@+id/tv_call"
+        android:layout_alignStart="@+id/tv_call"
+        android:layout_marginBottom="5dp"
+        android:gravity="right"
+        android:layout_alignRight="@+id/tv_call"
+        android:layout_alignEnd="@+id/tv_call" />
+
+</RelativeLayout>

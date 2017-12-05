@@ -1,0 +1,49 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="slidingmenu_offset">170dp</dimen>
+    <dimen name="shadow_width">15dp</dimen>
+    <dimen name="toptext">28sp</dimen>
+    <dimen name="toptext_height">50dp</dimen>
+    <dimen name="btn_textsize">15sp</dimen>
+    <dimen name="lv_height">442dp</dimen>
+    <dimen name="ll_width">80dp</dimen>
+    <dimen name="item_textsize">20sp</dimen>
+    <dimen name="item_img_height">20dp</dimen>
+    <dimen name="item_img_width">20dp</dimen>
+    <dimen name="btn_back_height">40dp</dimen>
+    <dimen name="lv_item_height">55dp</dimen>
+    <dimen name="condition_textsize">25sp</dimen>
+    <dimen name="lv_item_height2">140dp</dimen>
+    <dimen name="spinner_height">30dp</dimen>
+    <dimen name="agreement_unconfirm_textsize">20sp</dimen>
+    <dimen name="detail_height">200sp</dimen>
+    <dimen name="lv_item_detail_height">200dp</dimen>
+    <dimen name="table_width">90dp</dimen>
+    <dimen name="table_textsize">12sp</dimen>
+    <dimen name="lv_item_unremove_height">150dp</dimen>
+    <dimen name="item_unremove_detail_height">300dp</dimen>
+    <dimen name="lv_item_transactiongather_height">150dp</dimen>
+    <dimen name="lv_item_outgather_height">300dp</dimen>
+    <dimen name="edittext_width">240dp</dimen>
+    <dimen name="viewpager_height">480dp</dimen>
+    <dimen name="viewpager_height2">300dp</dimen>
+    <dimen name="table_width_order">120dp</dimen>
+    <dimen name="table_order_track_height">40dp</dimen>
+    <dimen name="text_marginleft">20dp</dimen>
+    
+    
+    <dimen name="message_title_textsize">25sp</dimen>
+     <dimen name="message_title_margin_top">14sp</dimen>
+      <dimen name="message_title_margin_right">15sp</dimen>
+<dimen name="login_edittext_height">40dp</dimen>
+<dimen name="login_edittext_width">250dp</dimen>
+<dimen name="bottom_button_height">25dp</dimen>
+<dimen name="bottom_button_width">25dp</dimen>
+<dimen name="top_button_height">60dp</dimen>
+<dimen name="top_button_width">60dp</dimen>
+<dimen name="bottom_textsize">12sp</dimen>
+<dimen name="nickname_textsize">17sp</dimen>
+</resources>

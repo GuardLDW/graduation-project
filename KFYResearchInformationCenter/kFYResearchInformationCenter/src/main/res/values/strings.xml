@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">科研助手</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="empty" />
+    <string name="setting">Settings</string>
+    <string name="wifi">Wifi</string>
+    <string name="home">Home</string>
+    <string name="menu_add_device">Add device</string>
+    <string name="menu_version">Version</string>
+    <string name="basic_settings">Basic settings</string>
+    <string name="exit">注销</string>
+    <string name="wangzhiqiang">王志强</string>
+    <string name="login">登录</string>
+    <string name="forget_the_password_">Forget the password?</string>
+    <string name="register">Register</string>
+    <string name="action_feed">意见反馈</string>
+    <string name="action_group_chat">发起群聊</string>
+    <string name="action_add_friend">添加朋友</string>
+    <string name="action_scan">扫一扫</string>
+    <string name="action_search">搜索</string>
+    <string name="action_add">添</string>
+    <string name="news">新闻</string>
+    <string name="notification">通知</string>
+    <string name="questnanswer">问答</string>
+    <string name="tab_process">流程</string>
+    <string name="tab_mine">我的</string>
+    <string name="more">更多</string>
+    <string name="hotspot_answer">热点回答</string>
+    <string name="infomation_center">信息中心</string>
+    <string name="finding">发现</string>
+    <string name="my_research">我的科研</string>
+	<string name="write_comment">写评论</string>
+	<string name="click_colon">点击：</string>
+	<string name="comment_colon">评论：</string>
+	<string name="nice_answer">精彩回答</string>
+	<string name="theme_colon">主题：</string>
+	<string name="content_colon">内容：</string>
+	<string name="submit">提交</string>
+	<string name="visitor_login">游客登录</string>
+	<string name="username">用户名</string>
+	<string name="password">密码</string>
+	<string name="question_content">问题内容</string>
+	<string name="publish_at_colon">发表于：</string>
+	<string name="official_answer">官方回答</string>
+	<string name="normal_answer">一般回答</string>
+	<string name="answer_colon">回答：</string>
+	<string name="click_to_comment">点击评论...</string>
+	<string name="my_question">我的问题</string>
+	<string name="my_collect">我的收藏</string>
+	<string name="message_noti">通知推送</string>
+	<string name="news_noti">新闻推送</string>
+	<string name="about">关于</string>
+	<string name="search">搜索...</string>
+	<string name="item_total">条记录</string>
+    <string name="recently_hot">近期热点</string>
+    <string name="apply">通知报名</string>
+    <string name="sign_in">签到</string>
+    <string name="scan_text">将二维码放入框内, 即可自动扫描</string>
+    <string name="my_signup">我的报名</string>
+    <string name="comment_content_cannot_be_empty">评论内容不能为空！</string>
+
+</resources>

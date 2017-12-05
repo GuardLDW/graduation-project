@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lightblue"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/btn_back_height"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:background="@color/lightblue"
+            android:text="＜返回"
+            android:textColor="@drawable/textcolor_selector"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/toptext"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toptext_height"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="14.43"
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="@color/white"
+            android:textSize="@dimen/toptext" />
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/btn_back_height"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@color/lightblue"
+            android:textColor="@drawable/textcolor_selector"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/btn_submit"
+            android:layout_toLeftOf="@+id/btn_submit"
+            android:text="+" 
+            android:textSize="30sp"
+            android:textColor="@drawable/textcolor_selector"
+            android:visibility="gone"
+            android:background="@color/lightblue"/>
+			
+    </RelativeLayout>
+
+</LinearLayout>

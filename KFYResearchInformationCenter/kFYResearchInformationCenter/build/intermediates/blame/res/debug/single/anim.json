@@ -1,0 +1,138 @@
+[
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_bottom.xml",
+        "source": "C:\\Users\\lenovo\\.android\\build-cache\\8959807ad9f5a7a148c0fc8de16ebcdfed73d948\\output\\res\\anim\\abc_slide_in_bottom.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\anim\\abc_shrink_fade_out_from_bottom.xml",
+        "source": "C:\\Users\\haoran\\.android\\build-cache\\7e39e7af88cfdefbca85ada5267583c219b8a796\\output\\res\\anim\\abc_shrink_fade_out_from_bottom.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\anim\\slide_in_from_bottom.xml",
+        "source": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\library\\build\\intermediates\\bundles\\default\\res\\anim\\slide_in_from_bottom.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_bottom.xml",
+        "source": "C:\\Users\\lenovo\\.android\\build-cache\\8959807ad9f5a7a148c0fc8de16ebcdfed73d948\\output\\res\\anim\\abc_slide_out_bottom.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\anim\\abc_grow_fade_in_from_bottom.xml",
+        "source": "C:\\Users\\lenovo\\.android\\build-cache\\8959807ad9f5a7a148c0fc8de16ebcdfed73d948\\output\\res\\anim\\abc_grow_fade_in_from_bottom.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_top.xml",
+        "source": "C:\\Users\\lenovo\\.android\\build-cache\\8959807ad9f5a7a148c0fc8de16ebcdfed73d948\\output\\res\\anim\\abc_slide_out_top.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_top.xml",
+        "source": "C:\\Users\\lenovo\\.android\\build-cache\\8959807ad9f5a7a148c0fc8de16ebcdfed73d948\\output\\res\\anim\\abc_slide_in_top.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\anim\\dialog_enter.xml",
+        "source": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\anim\\dialog_enter.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_in.xml",
+        "source": "C:\\Users\\haoran\\.android\\build-cache\\7e39e7af88cfdefbca85ada5267583c219b8a796\\output\\res\\anim\\abc_fade_in.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_bottom.xml",
+        "source": "C:\\Users\\haoran\\.android\\build-cache\\7e39e7af88cfdefbca85ada5267583c219b8a796\\output\\res\\anim\\abc_slide_out_bottom.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_out.xml",
+        "source": "C:\\Users\\haoran\\.android\\build-cache\\7e39e7af88cfdefbca85ada5267583c219b8a796\\output\\res\\anim\\abc_fade_out.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_bottom.xml",
+        "source": "C:\\Users\\haoran\\.android\\build-cache\\7e39e7af88cfdefbca85ada5267583c219b8a796\\output\\res\\anim\\abc_slide_in_bottom.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_exit.xml",
+        "source": "C:\\Users\\haoran\\.android\\build-cache\\7e39e7af88cfdefbca85ada5267583c219b8a796\\output\\res\\anim\\abc_popup_exit.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_enter.xml",
+        "source": "C:\\Users\\haoran\\.android\\build-cache\\7e39e7af88cfdefbca85ada5267583c219b8a796\\output\\res\\anim\\abc_popup_enter.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\anim\\dialog_exit.xml",
+        "source": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\anim\\dialog_exit.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\anim\\abc_grow_fade_in_from_bottom.xml",
+        "source": "C:\\Users\\haoran\\.android\\build-cache\\7e39e7af88cfdefbca85ada5267583c219b8a796\\output\\res\\anim\\abc_grow_fade_in_from_bottom.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\anim\\alpha.xml",
+        "source": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\anim\\alpha.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\anim\\slide_out_to_top.xml",
+        "source": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\library\\build\\intermediates\\bundles\\default\\res\\anim\\slide_out_to_top.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\anim\\slide_in_from_top.xml",
+        "source": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\library\\build\\intermediates\\bundles\\default\\res\\anim\\slide_in_from_top.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_top.xml",
+        "source": "C:\\Users\\haoran\\.android\\build-cache\\7e39e7af88cfdefbca85ada5267583c219b8a796\\output\\res\\anim\\abc_slide_out_top.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_in.xml",
+        "source": "C:\\Users\\lenovo\\.android\\build-cache\\8959807ad9f5a7a148c0fc8de16ebcdfed73d948\\output\\res\\anim\\abc_fade_in.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\anim\\slide_out_to_top.xml",
+        "source": "F:\\Study\\bishe\\KFYResearchInformationCenter\\library\\build\\intermediates\\bundles\\default\\res\\anim\\slide_out_to_top.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\anim\\slide_in_from_bottom.xml",
+        "source": "F:\\Study\\bishe\\KFYResearchInformationCenter\\library\\build\\intermediates\\bundles\\default\\res\\anim\\slide_in_from_bottom.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\anim\\dialog_enter.xml",
+        "source": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\anim\\dialog_enter.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_out.xml",
+        "source": "C:\\Users\\lenovo\\.android\\build-cache\\8959807ad9f5a7a148c0fc8de16ebcdfed73d948\\output\\res\\anim\\abc_fade_out.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_enter.xml",
+        "source": "C:\\Users\\lenovo\\.android\\build-cache\\8959807ad9f5a7a148c0fc8de16ebcdfed73d948\\output\\res\\anim\\abc_popup_enter.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\anim\\alpha.xml",
+        "source": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\anim\\alpha.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_top.xml",
+        "source": "C:\\Users\\haoran\\.android\\build-cache\\7e39e7af88cfdefbca85ada5267583c219b8a796\\output\\res\\anim\\abc_slide_in_top.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\anim\\slide_out_to_bottom.xml",
+        "source": "F:\\Study\\bishe\\KFYResearchInformationCenter\\library\\build\\intermediates\\bundles\\default\\res\\anim\\slide_out_to_bottom.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\anim\\slide_in_from_top.xml",
+        "source": "F:\\Study\\bishe\\KFYResearchInformationCenter\\library\\build\\intermediates\\bundles\\default\\res\\anim\\slide_in_from_top.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\anim\\dialog_exit.xml",
+        "source": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\anim\\dialog_exit.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_exit.xml",
+        "source": "C:\\Users\\lenovo\\.android\\build-cache\\8959807ad9f5a7a148c0fc8de16ebcdfed73d948\\output\\res\\anim\\abc_popup_exit.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\anim\\abc_shrink_fade_out_from_bottom.xml",
+        "source": "C:\\Users\\lenovo\\.android\\build-cache\\8959807ad9f5a7a148c0fc8de16ebcdfed73d948\\output\\res\\anim\\abc_shrink_fade_out_from_bottom.xml"
+    },
+    {
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\anim\\slide_out_to_bottom.xml",
+        "source": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\library\\build\\intermediates\\bundles\\default\\res\\anim\\slide_out_to_bottom.xml"
+    }
+]
