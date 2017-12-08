@@ -466,7 +466,7 @@ public class QnADetailsActivity extends DialogShowOffAct implements
         RequestParams params = new RequestParams();
         params.addBodyParameter("user_id", user_id);
         params.addBodyParameter("object_id", object_id);
-        params.addBodyParameter("object_type", object_type);
+            params.addBodyParameter("object_type", object_type);
 
         HttpUtils http = new HttpUtils();
         http.send(HttpRequest.HttpMethod.POST, ConfigUtil.MY_SERVICE_URL
