@@ -748,6 +748,10 @@
         "source": "C:\\Users\\lenovo\\.android\\build-cache\\8959807ad9f5a7a148c0fc8de16ebcdfed73d948\\output\\res\\layout\\abc_action_bar_title_item.xml"
     },
     {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_science.xml",
+        "source": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\fragment_science.xml"
+    },
+    {
         "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_view.xml",
         "source": "C:\\Users\\lenovo\\.android\\build-cache\\8959807ad9f5a7a148c0fc8de16ebcdfed73d948\\output\\res\\layout\\abc_search_view.xml"
     },

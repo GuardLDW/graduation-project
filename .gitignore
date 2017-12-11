@@ -1,3 +1,10 @@
-/Sdk/
 /KFYResearchInformationCenter/build/android-profile/
+/Sdk/
 /KFYResearchInformationCenter/kFYResearchInformationCenter/build/
+.gradle
+/local.properties
+/.idea
+.DS_Store
+/build
+*.iml
+/captures
