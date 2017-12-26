@@ -14,6 +14,7 @@ import android.widget.EditText;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 
+import com.bjut.cyl.kfyrip.PushService;
 import com.bjut.cyl.kfyrip.utils.ConfigUtil;
 import com.bjut.cyl.kfyrip.utils.KeyBoardHelper;
 import com.lidroid.xutils.HttpUtils;
@@ -44,6 +45,9 @@ public class LoginActivity extends DialogShowOffAct implements OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+
+
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
 //		int mode = WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN|WindowManager.LayoutParams.SOFT_INPUT_ADJUST_PAN;

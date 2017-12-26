@@ -21,6 +21,7 @@
 
     <!-- Required  一些系统要求的权限，如访问网络等 -->
     <uses-permission android:name="com.bjut.cyl.kfyrip.ui.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
@@ -82,8 +83,7 @@
         <activity
             android:name="cn.jpush.android.ui.PopWinActivity"
             android:exported="false"
-            android:theme="@style/MyDialogStyle" >
-        </activity>
+            android:theme="@style/MyDialogStyle" />
 
         <!-- Required SDK核心功能 -->
         <activity
@@ -277,6 +277,22 @@
             android:exported="true"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <service
+            android:name="com.bjut.cyl.kfyrip.PushService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name="com.bjut.cyl.kfyrip.UpdateNoticeActivity" />
+
+        <receiver
+            android:name="com.bjut.cyl.kfyrip.BootCompleteReceiver"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>

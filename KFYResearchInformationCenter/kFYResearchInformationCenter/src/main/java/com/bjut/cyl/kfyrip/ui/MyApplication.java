@@ -1,6 +1,7 @@
 package com.bjut.cyl.kfyrip.ui;
 
 import android.app.Application;
+import android.content.Context;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
 
@@ -14,8 +15,13 @@ public class MyApplication extends Application {
     protected SharedPreferences pref;
     protected SharedPreferences.Editor editor;
 
+    //
+    private static Context context;
+
+    //public static Context getContext() {
     public static MyApplication getContext() {
         return instance;
+        //return context;
     }
 
     @Override
@@ -24,6 +30,9 @@ public class MyApplication extends Application {
         instance = this;
         JPushInterface.setDebugMode(true);
         JPushInterface.init(this);
+        context = getApplicationContext();
     }
+
+
 
 }

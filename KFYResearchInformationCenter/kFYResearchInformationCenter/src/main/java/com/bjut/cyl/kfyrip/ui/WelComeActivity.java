@@ -27,6 +27,7 @@ public class WelComeActivity extends Activity {
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
+
 		super.onCreate(savedInstanceState);
 		LogUtil.d("trace", "welcom!!!!!!!!!!!!!!!");
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
