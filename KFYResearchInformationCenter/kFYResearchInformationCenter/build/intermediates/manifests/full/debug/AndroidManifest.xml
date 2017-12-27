@@ -281,7 +281,8 @@
         <service
             android:name="com.bjut.cyl.kfyrip.PushService"
             android:enabled="true"
-            android:exported="true" />
+            android:exported="true"
+            android:persistent="true" />
 
         <activity android:name="com.bjut.cyl.kfyrip.UpdateNoticeActivity" />
 

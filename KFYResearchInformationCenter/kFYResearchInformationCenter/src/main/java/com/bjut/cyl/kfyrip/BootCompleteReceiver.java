@@ -12,9 +12,9 @@ public class BootCompleteReceiver extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
 
-        Intent intent1 = new Intent(MyApplication.getContext(), PushService.class);
-        MyApplication.getContext().startService(intent1);
-        Toast.makeText(MyApplication.getContext(), "Hello", Toast.LENGTH_LONG).show();
-        throw new UnsupportedOperationException("Not yet implemented");
+        Intent intent1 = new Intent(context, PushService.class);
+        context.startService(intent1);
+        Toast.makeText(context, "Hello", Toast.LENGTH_LONG).show();
+
     }
 }
