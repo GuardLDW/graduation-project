@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.widget.Toast;
 
+import com.bjut.cyl.kfyrip.ui.MainActivity;
 import com.bjut.cyl.kfyrip.ui.MyApplication;
 
 public class BootCompleteReceiver extends BroadcastReceiver {

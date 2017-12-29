@@ -1,5 +1,6 @@
 package com.bjut.cyl.kfyrip;
 
+import android.app.Activity;
 import android.app.AlarmManager;
 import android.app.AlertDialog;
 import android.app.Application;
@@ -48,6 +49,8 @@ public class PushService extends Service {
     private List<Map<String, Object>> mDataOk;
     private SharedPreferences pref;
     private SharedPreferences.Editor editor;
+    private long thisTime;
+    private MainActivity mainActivity;
 
     public PushService() {
     }
@@ -60,17 +63,18 @@ public class PushService extends Service {
 
     @Override
     public void onCreate() {
+
         super.onCreate();
+
+        mainActivity = MainActivity.getInstance();
         pref = PreferenceManager.getDefaultSharedPreferences(this);
         editor = pref.edit();
         editor.commit();
-
 
     }
 
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
-
 
         new Thread(new Runnable() {
             @Override
@@ -96,13 +100,14 @@ public class PushService extends Service {
     @Override
     public void onDestroy() {
         super.onDestroy();
-
     }
 
 
     public void testPost(String offset, String pagesize, String channel_id) {
-        //sendNotice();
+
+        //Toast.makeText(MainActivity.getInstance(), "XXX", Toast.LENGTH_SHORT).show();
         //获取当前时间thisTime
+        thisTime = System.currentTimeMillis();
         //获取文件中存储的时间lastTime(第一次时存入lasttime为当前时间前一天)
 
         RequestParams params = new RequestParams();
@@ -128,8 +133,11 @@ public class PushService extends Service {
             public void onSuccess(final ResponseInfo<String> responseInfo) {
                 // resultText.setText("upload response:" + responseInfo.result);
                 //System.out.println(responseInfo.result);
-                sendNotice1();
-                UpdateNoticeActivity.instance.runOnUiThread(new Runnable() {
+
+                sendNotice("success",1);
+
+                //UpdateNoticeActivity.instance
+                mainActivity.runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
 
@@ -141,29 +149,8 @@ public class PushService extends Service {
                             int code = jsonObject.getInt("code");
                             if (code == 210) {
 
-                                Intent intent = new Intent(PushService.this, MainActivity.class);
-                                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                                startActivity(intent);
-
                                 mDataOk = getData(jsonObject);// 填充数据
                                 //System.out.println("mdataok" + mDataOk);
-
-                                //判断发布的时间是否在thisTime与lastTime之间
-                                //如果在，发布通知
-
-
-                                for (Map<String, Object> m : mDataOk)
-                                {
-                                    for (String k : m.keySet())
-                                    {
-                                        System.out.println(k + " : " + m.get(k));
-                                        //筛选新发布的通知，将该条通知信息作为参数
-                                        if(m.get("time") == "1"){
-                                            sendNotice();
-                                        }
-                                    }
-
-                                }
 
                                 if (mDataOk.size() >= 0) {
                                     mData.addAll(mDataOk);
@@ -171,12 +158,29 @@ public class PushService extends Service {
                                     //System.out.println(mData);
 
                                 }
+
+                                sendNotice("210",2);
+                                //判断发布的时间是否在thisTime与lastTime之间
+                                //如果在，发布通知
+                                for (Map<String, Object> m : mData)
+                                {
+                                    for (String k : m.keySet())
+                                    {
+                                        System.out.println(k + " : " + m.get(k));
+                                        //筛选新发布的通知，将该条通知信息作为参数
+                                        // if(m.get("view_num") == "1"){
+                                        sendNotice(String.valueOf(m.get("time")), 3);
+                                        if(String.valueOf(m.get("comment_num")) == "0"){
+
+                                            sendNotice("评论为0的通知的时间："+String.valueOf(m.get("time")), 4);
+                                        }
+
+                                    }
+
+                                }
                             }else if (code == 310) {
 
-                                Intent intent1 = new Intent(PushService.this, MainActivity.class);
-                                intent1.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                                startActivity(intent1);
-
+                                sendNotice("310",2);
                             }
                         } catch (Exception e) {
                             // TODO Auto-generated catch block
@@ -189,8 +193,8 @@ public class PushService extends Service {
 
             @Override
             public void onFailure(HttpException error, String msg) {
-                sendNotice();
 
+                        sendNotice("failure",1);
             }
         });
     }
@@ -215,39 +219,22 @@ public class PushService extends Service {
         return list;
     }
 
-    public void sendNotice(){
+    public void sendNotice(String s,int i){
         //for(int i=1;i<10;i++) {
 
         final Bitmap largeIcon = ((BitmapDrawable) getResources().getDrawable(R.drawable.ic_launcher)).getBitmap();
         NotificationManager manager = (NotificationManager)getSystemService(NOTIFICATION_SERVICE);
         Notification notification = new NotificationCompat.Builder(this)
-                .setContentTitle("title")
-                .setContentText("text")
+                .setContentTitle(s)
+                .setContentText(s)
                 .setWhen(System.currentTimeMillis())
                 .setSmallIcon(R.drawable.ic_launcher)
                 .setLargeIcon(largeIcon)
                 .build();
-        manager.notify(1, notification);
+        manager.notify(i, notification);
         //}
 
 
     }
 
-    public void sendNotice1(){
-        //for(int i=1;i<10;i++) {
-
-        final Bitmap largeIcon = ((BitmapDrawable) getResources().getDrawable(R.drawable.ic_launcher)).getBitmap();
-        NotificationManager manager = (NotificationManager)getSystemService(NOTIFICATION_SERVICE);
-        Notification notification = new NotificationCompat.Builder(this)
-                .setContentTitle("title11111111111111")
-                .setContentText("text11111111111")
-                .setWhen(System.currentTimeMillis())
-                .setSmallIcon(R.drawable.ic_launcher)
-                .setLargeIcon(largeIcon)
-                .build();
-        manager.notify(1, notification);
-        //}
-
-
-    }
 }

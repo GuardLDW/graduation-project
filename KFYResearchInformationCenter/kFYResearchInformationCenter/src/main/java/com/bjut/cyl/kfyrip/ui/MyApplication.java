@@ -21,7 +21,11 @@ public class MyApplication extends Application {
     //public static Context getContext() {
     public static MyApplication getContext() {
         return instance;
-        //return context;
+
+    }
+
+    public static Context getContext1(){
+        return context;
     }
 
     @Override

@@ -31,6 +31,7 @@ import cn.sharesdk.framework.ShareSDK;
 
 public class MainActivity extends SlidingFragmentActivity implements
         OnClickListener {
+    public static MainActivity instance = null;
     private ImageButton ivTitleBtnLeft;
     private Button ivTitleBtnRight;
     private Fragment mContent;
@@ -51,6 +52,13 @@ public class MainActivity extends SlidingFragmentActivity implements
     private LinearLayout buttonLayout, searchLl;
     private TextView xxzxTv, fxTv, lcTv, tzTv, xwTv, wdTv, bmTv, scienceTv;
     private SharedPreferences pref;
+
+    public static MainActivity getInstance() {
+        if (instance == null) {
+            instance = new MainActivity();
+        }
+        return instance;
+    }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -118,6 +126,8 @@ public class MainActivity extends SlidingFragmentActivity implements
 //		transaction
 //				.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
 //		transaction.commit();
+
+
         initView();
     }
 
