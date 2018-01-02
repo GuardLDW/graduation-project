@@ -21,8 +21,10 @@ import android.preference.PreferenceManager;
 import android.support.v4.app.NotificationCompat;
 import android.widget.Toast;
 
+import com.bjut.cyl.kfyrip.ui.LoginActivity;
 import com.bjut.cyl.kfyrip.ui.MainActivity;
 import com.bjut.cyl.kfyrip.ui.MyApplication;
+import com.bjut.cyl.kfyrip.ui.NotificationDetailsActivity;
 import com.bjut.cyl.kfyrip.ui.R;
 import com.bjut.cyl.kfyrip.utils.ConfigUtil;
 import com.lidroid.xutils.HttpUtils;
@@ -38,7 +40,9 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -49,7 +53,8 @@ public class PushService extends Service {
     private List<Map<String, Object>> mDataOk;
     private SharedPreferences pref;
     private SharedPreferences.Editor editor;
-    private long thisTime;
+    private String thisTime;
+    private String lastTime;
     private MainActivity mainActivity;
 
     public PushService() {
@@ -105,11 +110,15 @@ public class PushService extends Service {
 
     public void testPost(String offset, String pagesize, String channel_id) {
 
+
         //Toast.makeText(MainActivity.getInstance(), "XXX", Toast.LENGTH_SHORT).show();
         //获取当前时间thisTime
-        thisTime = System.currentTimeMillis();
+        SimpleDateFormat dateformat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        thisTime = dateformat.format(System.currentTimeMillis());
         //获取文件中存储的时间lastTime(第一次时存入lasttime为当前时间前一天)
-
+        //lastTime = pref.getString("time", thisTime);
+        lastTime = pref.getString("time", "2017-12-01 00:00:00");
+        lastTime = "2017-12-01 00:00:00";
         RequestParams params = new RequestParams();
         params.addBodyParameter("offset", offset);
         params.addBodyParameter("pagesize", pagesize);
@@ -134,8 +143,6 @@ public class PushService extends Service {
                 // resultText.setText("upload response:" + responseInfo.result);
                 //System.out.println(responseInfo.result);
 
-                sendNotice("success",1);
-
                 //UpdateNoticeActivity.instance
                 mainActivity.runOnUiThread(new Runnable() {
                     @Override
@@ -159,28 +166,36 @@ public class PushService extends Service {
 
                                 }
 
-                                sendNotice("210",2);
+                                sendNotice("访问通知接口","返回210",100);
                                 //判断发布的时间是否在thisTime与lastTime之间
                                 //如果在，发布通知
+
+                                int i = 1;
                                 for (Map<String, Object> m : mData)
                                 {
                                     for (String k : m.keySet())
                                     {
                                         System.out.println(k + " : " + m.get(k));
                                         //筛选新发布的通知，将该条通知信息作为参数
-                                        // if(m.get("view_num") == "1"){
-                                        sendNotice(String.valueOf(m.get("time")), 3);
-                                        if(String.valueOf(m.get("comment_num")) == "0"){
+                                        String noticeTime = String.valueOf(m.get("time"));
+                                        if(noticeTime.compareTo(lastTime) > 0 && noticeTime.compareTo(thisTime) < 0){
 
-                                            sendNotice("评论为0的通知的时间："+String.valueOf(m.get("time")), 4);
+                                            sendNotice(String.valueOf(m.get("title")), String.valueOf(m.get("summary")), i);
+                                            i++;
                                         }
+                                        sendNotice("本次更新时间：", thisTime, 199);
+                                        sendNotice("上次更新时间：", lastTime, 200);
 
                                     }
 
                                 }
+
+                                //记录时间
+                                editor.putString("time", thisTime);
+                                editor.commit();
+
                             }else if (code == 310) {
 
-                                sendNotice("310",2);
                             }
                         } catch (Exception e) {
                             // TODO Auto-generated catch block
@@ -193,8 +208,8 @@ public class PushService extends Service {
 
             @Override
             public void onFailure(HttpException error, String msg) {
-
-                        sendNotice("failure",1);
+                sendNotice("本次更新时间：", thisTime, 199);
+                sendNotice("上次更新时间：", lastTime, 200);
             }
         });
     }
@@ -219,22 +234,23 @@ public class PushService extends Service {
         return list;
     }
 
-    public void sendNotice(String s,int i){
-        //for(int i=1;i<10;i++) {
+    public void sendNotice(String contentTitle,String contentText, int i){
 
+        //Intent intent = new Intent(this, NotificationDetailsActivity.class);
+        Intent intent = new Intent(this, LoginActivity.class);
+        PendingIntent pi = PendingIntent.getActivity(this, 0, intent, 0);
         final Bitmap largeIcon = ((BitmapDrawable) getResources().getDrawable(R.drawable.ic_launcher)).getBitmap();
         NotificationManager manager = (NotificationManager)getSystemService(NOTIFICATION_SERVICE);
         Notification notification = new NotificationCompat.Builder(this)
-                .setContentTitle(s)
-                .setContentText(s)
+                .setContentTitle(contentTitle)
+                .setContentText(contentText)
                 .setWhen(System.currentTimeMillis())
                 .setSmallIcon(R.drawable.ic_launcher)
                 .setLargeIcon(largeIcon)
+                //.setContentIntent(pi)
+                .setAutoCancel(true)
                 .build();
         manager.notify(i, notification);
-        //}
-
-
     }
 
 }
