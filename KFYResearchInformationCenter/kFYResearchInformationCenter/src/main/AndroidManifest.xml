@@ -276,8 +276,8 @@
         <service
             android:name="com.bjut.cyl.kfyrip.PushService"
             android:enabled="true"
-            android:persistent="true"
-            android:exported="true" />
+            android:exported="true"
+            android:persistent="true" />
 
         <activity android:name="com.bjut.cyl.kfyrip.UpdateNoticeActivity" />
 
@@ -286,8 +286,14 @@
             android:enabled="true"
             android:exported="true">
             <intent-filter>
-                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.bjut.cyl.kfyrip.NotificationReceiver"
+            android:enabled="true"
+            android:exported="true">
+
         </receiver>
     </application>
 

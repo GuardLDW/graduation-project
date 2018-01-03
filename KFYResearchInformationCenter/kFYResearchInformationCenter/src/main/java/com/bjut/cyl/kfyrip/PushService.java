@@ -46,6 +46,7 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.UUID;
 
 public class PushService extends Service {
 
@@ -117,8 +118,8 @@ public class PushService extends Service {
         thisTime = dateformat.format(System.currentTimeMillis());
         //获取文件中存储的时间lastTime(第一次时存入lasttime为当前时间前一天)
         //lastTime = pref.getString("time", thisTime);
-        lastTime = pref.getString("time", "2017-12-01 00:00:00");
-        lastTime = "2017-12-01 00:00:00";
+        //lastTime = pref.getString("time", "2017-12-28 00:00:00");
+        lastTime = "2017-12-28 00:00:00";
         RequestParams params = new RequestParams();
         params.addBodyParameter("offset", offset);
         params.addBodyParameter("pagesize", pagesize);
@@ -166,27 +167,27 @@ public class PushService extends Service {
 
                                 }
 
-                                sendNotice("访问通知接口","返回210",100);
+                                //sendNotice("访问通知接口","返回210",100);
                                 //判断发布的时间是否在thisTime与lastTime之间
                                 //如果在，发布通知
 
                                 int i = 1;
                                 for (Map<String, Object> m : mData)
                                 {
-                                    for (String k : m.keySet())
-                                    {
-                                        System.out.println(k + " : " + m.get(k));
+                                    //for (String k : m.keySet())
+                                    //{
+                                    //    System.out.println(k + " : " + m.get(k));
                                         //筛选新发布的通知，将该条通知信息作为参数
                                         String noticeTime = String.valueOf(m.get("time"));
                                         if(noticeTime.compareTo(lastTime) > 0 && noticeTime.compareTo(thisTime) < 0){
-
-                                            sendNotice(String.valueOf(m.get("title")), String.valueOf(m.get("summary")), i);
+                                            String messageId = (String)m.get("summary");
+                                            sendNotice("科研助手有新通知了！", String.valueOf(m.get("title")), i);
                                             i++;
                                         }
                                         sendNotice("本次更新时间：", thisTime, 199);
                                         sendNotice("上次更新时间：", lastTime, 200);
 
-                                    }
+                                    //}
 
                                 }
 
@@ -236,9 +237,9 @@ public class PushService extends Service {
 
     public void sendNotice(String contentTitle,String contentText, int i){
 
-        //Intent intent = new Intent(this, NotificationDetailsActivity.class);
-        Intent intent = new Intent(this, LoginActivity.class);
-        PendingIntent pi = PendingIntent.getActivity(this, 0, intent, 0);
+        Intent broadcastIntent = new Intent(this, NotificationReceiver.class);
+        broadcastIntent.putExtra("summary", contentText);
+        PendingIntent pendingIntent = PendingIntent.getBroadcast(this, UUID.randomUUID().hashCode(), broadcastIntent, PendingIntent.FLAG_UPDATE_CURRENT);
         final Bitmap largeIcon = ((BitmapDrawable) getResources().getDrawable(R.drawable.ic_launcher)).getBitmap();
         NotificationManager manager = (NotificationManager)getSystemService(NOTIFICATION_SERVICE);
         Notification notification = new NotificationCompat.Builder(this)
@@ -247,7 +248,7 @@ public class PushService extends Service {
                 .setWhen(System.currentTimeMillis())
                 .setSmallIcon(R.drawable.ic_launcher)
                 .setLargeIcon(largeIcon)
-                //.setContentIntent(pi)
+                .setContentIntent(pendingIntent)
                 .setAutoCancel(true)
                 .build();
         manager.notify(i, notification);
