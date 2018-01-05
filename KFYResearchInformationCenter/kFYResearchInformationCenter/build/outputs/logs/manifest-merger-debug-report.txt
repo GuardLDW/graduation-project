@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from F:\Study\bishe\KFYResearchInformationCenter\kFYResearchInformationCenter\src\main\AndroidManifest.xml:2:1-300:12
+ADDED from F:\Study\bishe\KFYResearchInformationCenter\kFYResearchInformationCenter\src\main\AndroidManifest.xml:2:1-298:12
 	package
 		ADDED from F:\Study\bishe\KFYResearchInformationCenter\kFYResearchInformationCenter\src\main\AndroidManifest.xml:3:5-37
 		INJECTED from F:\Study\bishe\KFYResearchInformationCenter\kFYResearchInformationCenter\src\main\AndroidManifest.xml
@@ -180,7 +180,7 @@ ADDED from F:\Study\bishe\KFYResearchInformationCenter\kFYResearchInformationCen
 	android:name
 		ADDED from F:\Study\bishe\KFYResearchInformationCenter\kFYResearchInformationCenter\src\main\AndroidManifest.xml:58:19-67
 application
-ADDED from F:\Study\bishe\KFYResearchInformationCenter\kFYResearchInformationCenter\src\main\AndroidManifest.xml:60:5-298:19
+ADDED from F:\Study\bishe\KFYResearchInformationCenter\kFYResearchInformationCenter\src\main\AndroidManifest.xml:60:5-296:19
 MERGED from [KFYResearchInformationCenter:library:unspecified] F:\Study\bishe\KFYResearchInformationCenter\library\build\intermediates\bundles\default\AndroidManifest.xml:11:5-20
 MERGED from [KFYResearchInformationCenter:onekeyshare:unspecified] F:\Study\bishe\KFYResearchInformationCenter\onekeyshare\build\intermediates\bundles\default\AndroidManifest.xml:19:5-22:19
 MERGED from [KFYResearchInformationCenter:sharesdk:unspecified] F:\Study\bishe\KFYResearchInformationCenter\sharesdk\build\intermediates\bundles\default\AndroidManifest.xml:12:5-15:19
@@ -577,32 +577,28 @@ ADDED from F:\Study\bishe\KFYResearchInformationCenter\kFYResearchInformationCen
 		ADDED from F:\Study\bishe\KFYResearchInformationCenter\kFYResearchInformationCenter\src\main\AndroidManifest.xml:280:13-38
 	android:name
 		ADDED from F:\Study\bishe\KFYResearchInformationCenter\kFYResearchInformationCenter\src\main\AndroidManifest.xml:277:13-59
-activity#com.bjut.cyl.kfyrip.UpdateNoticeActivity
-ADDED from F:\Study\bishe\KFYResearchInformationCenter\kFYResearchInformationCenter\src\main\AndroidManifest.xml:282:9-77
-	android:name
-		ADDED from F:\Study\bishe\KFYResearchInformationCenter\kFYResearchInformationCenter\src\main\AndroidManifest.xml:282:19-74
 receiver#com.bjut.cyl.kfyrip.BootCompleteReceiver
-ADDED from F:\Study\bishe\KFYResearchInformationCenter\kFYResearchInformationCenter\src\main\AndroidManifest.xml:284:9-291:20
+ADDED from F:\Study\bishe\KFYResearchInformationCenter\kFYResearchInformationCenter\src\main\AndroidManifest.xml:282:9-289:20
 	android:enabled
-		ADDED from F:\Study\bishe\KFYResearchInformationCenter\kFYResearchInformationCenter\src\main\AndroidManifest.xml:286:13-35
+		ADDED from F:\Study\bishe\KFYResearchInformationCenter\kFYResearchInformationCenter\src\main\AndroidManifest.xml:284:13-35
 	android:exported
-		ADDED from F:\Study\bishe\KFYResearchInformationCenter\kFYResearchInformationCenter\src\main\AndroidManifest.xml:287:13-36
+		ADDED from F:\Study\bishe\KFYResearchInformationCenter\kFYResearchInformationCenter\src\main\AndroidManifest.xml:285:13-36
 	android:name
-		ADDED from F:\Study\bishe\KFYResearchInformationCenter\kFYResearchInformationCenter\src\main\AndroidManifest.xml:285:13-68
+		ADDED from F:\Study\bishe\KFYResearchInformationCenter\kFYResearchInformationCenter\src\main\AndroidManifest.xml:283:13-68
 intent-filter#android.intent.action.BOOT_COMPLETED
-ADDED from F:\Study\bishe\KFYResearchInformationCenter\kFYResearchInformationCenter\src\main\AndroidManifest.xml:288:13-290:29
+ADDED from F:\Study\bishe\KFYResearchInformationCenter\kFYResearchInformationCenter\src\main\AndroidManifest.xml:286:13-288:29
 action#android.intent.action.BOOT_COMPLETED
-ADDED from F:\Study\bishe\KFYResearchInformationCenter\kFYResearchInformationCenter\src\main\AndroidManifest.xml:289:17-79
+ADDED from F:\Study\bishe\KFYResearchInformationCenter\kFYResearchInformationCenter\src\main\AndroidManifest.xml:287:17-79
 	android:name
-		ADDED from F:\Study\bishe\KFYResearchInformationCenter\kFYResearchInformationCenter\src\main\AndroidManifest.xml:289:25-76
+		ADDED from F:\Study\bishe\KFYResearchInformationCenter\kFYResearchInformationCenter\src\main\AndroidManifest.xml:287:25-76
 receiver#com.bjut.cyl.kfyrip.NotificationReceiver
-ADDED from F:\Study\bishe\KFYResearchInformationCenter\kFYResearchInformationCenter\src\main\AndroidManifest.xml:292:9-297:20
+ADDED from F:\Study\bishe\KFYResearchInformationCenter\kFYResearchInformationCenter\src\main\AndroidManifest.xml:290:9-295:20
 	android:enabled
-		ADDED from F:\Study\bishe\KFYResearchInformationCenter\kFYResearchInformationCenter\src\main\AndroidManifest.xml:294:13-35
+		ADDED from F:\Study\bishe\KFYResearchInformationCenter\kFYResearchInformationCenter\src\main\AndroidManifest.xml:292:13-35
 	android:exported
-		ADDED from F:\Study\bishe\KFYResearchInformationCenter\kFYResearchInformationCenter\src\main\AndroidManifest.xml:295:13-36
+		ADDED from F:\Study\bishe\KFYResearchInformationCenter\kFYResearchInformationCenter\src\main\AndroidManifest.xml:293:13-36
 	android:name
-		ADDED from F:\Study\bishe\KFYResearchInformationCenter\kFYResearchInformationCenter\src\main\AndroidManifest.xml:293:13-68
+		ADDED from F:\Study\bishe\KFYResearchInformationCenter\kFYResearchInformationCenter\src\main\AndroidManifest.xml:291:13-68
 meta-data#android.support.VERSION
 ADDED from [com.android.support:recyclerview-v7:26.0.0-alpha1] C:\Users\lenovo\.android\build-cache\9594b8f4bda5d98bdc9c68458b91bcf17388d029\output\AndroidManifest.xml:22:5-24:41
 MERGED from [com.android.support:support-v4:26.0.0-alpha1] C:\Users\lenovo\.android\build-cache\8aefc0ddb6568b422d0a7733fae98602e3bf2952\output\AndroidManifest.xml:25:5-27:41

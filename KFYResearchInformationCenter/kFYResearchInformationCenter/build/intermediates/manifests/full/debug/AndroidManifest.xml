@@ -284,8 +284,6 @@
             android:exported="true"
             android:persistent="true" />
 
-        <activity android:name="com.bjut.cyl.kfyrip.UpdateNoticeActivity" />
-
         <receiver
             android:name="com.bjut.cyl.kfyrip.BootCompleteReceiver"
             android:enabled="true"

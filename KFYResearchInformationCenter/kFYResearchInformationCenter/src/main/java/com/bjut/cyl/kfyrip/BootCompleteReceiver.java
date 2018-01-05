@@ -15,7 +15,6 @@ public class BootCompleteReceiver extends BroadcastReceiver {
 
         Intent intent1 = new Intent(context, PushService.class);
         context.startService(intent1);
-        Toast.makeText(context, "Hello", Toast.LENGTH_LONG).show();
 
     }
 }
