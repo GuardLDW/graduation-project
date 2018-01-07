@@ -21,10 +21,12 @@ import android.preference.PreferenceManager;
 import android.support.v4.app.NotificationCompat;
 import android.widget.Toast;
 
+import com.bjut.cyl.kfyrip.bean.getQuestionList;
 import com.bjut.cyl.kfyrip.ui.LoginActivity;
 import com.bjut.cyl.kfyrip.ui.MainActivity;
 import com.bjut.cyl.kfyrip.ui.MyApplication;
 import com.bjut.cyl.kfyrip.ui.NotificationDetailsActivity;
+import com.bjut.cyl.kfyrip.ui.QnADetailsActivity;
 import com.bjut.cyl.kfyrip.ui.R;
 import com.bjut.cyl.kfyrip.utils.ConfigUtil;
 import com.lidroid.xutils.HttpUtils;
@@ -50,8 +52,10 @@ import java.util.UUID;
 
 public class PushService extends Service {
 
-    private List<Map<String, Object>> mData = new ArrayList<Map<String, Object>>();
-    private List<Map<String, Object>> mDataOk  = new ArrayList<Map<String, Object>>();
+    private List<Map<String, Object>> noticeData = new ArrayList<Map<String, Object>>();
+    private List<Map<String, Object>> noticeDataOk;
+    private List<Map<String, Object>> questionData = new ArrayList<Map<String, Object>>();
+    private List<Map<String, Object>> questionDataOk;
     private SharedPreferences pref;
     private SharedPreferences.Editor editor;
     private String thisTime;
@@ -90,8 +94,16 @@ public class PushService extends Service {
             public void run() {
 
                 messagePositon = 1;
+                //获取当前时间thisTime
+                SimpleDateFormat dateformat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+                thisTime = dateformat.format(System.currentTimeMillis());
+                //获取文件中存储的时间lastTime(第一次时存入lasttime???)
+                //lastTime = pref.getString("time", thisTime);
+                lastTime = "2018-01-01 00:00:00";
+
                 //通知
                 refreshNotice("0", "10",ConfigUtil.CHANNEL_ID_NOTIFICATION);
+                refreshQuestion("0", "10");
 
 
             }
@@ -117,12 +129,10 @@ public class PushService extends Service {
 
     public void refreshNotice(String offset, String pagesize, String channel_id) {
 
-        //获取当前时间thisTime
-        SimpleDateFormat dateformat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-        thisTime = dateformat.format(System.currentTimeMillis());
-        //获取文件中存储的时间lastTime(第一次时存入lasttime???)
-        //lastTime = pref.getString("time", thisTime);
-        lastTime = "2018-01-01 00:00:00";
+        //清空当前的循环列表
+        noticeData.clear();//啊啊啊啊啊
+
+
         RequestParams params = new RequestParams();
         params.addBodyParameter("offset", offset);
         params.addBodyParameter("pagesize", pagesize);
@@ -160,14 +170,12 @@ public class PushService extends Service {
                             int code = jsonObject.getInt("code");
                             if (code == 210) {
 
-                                mDataOk = getData(jsonObject);// 填充数据
+                                noticeDataOk = getNoticeData(jsonObject);// 填充数据
                                 //System.out.println("mdataok" + mDataOk);
 
-                                mData.clear();//啊啊啊啊啊
-
-                                if (mDataOk.size() >= 0) {
-                                    mData.addAll(mDataOk);
-                                    mDataOk.clear();
+                                if (noticeDataOk.size() >= 0) {
+                                    noticeData.addAll(noticeDataOk);
+                                    noticeDataOk.clear();
                                     //System.out.println(mData);
 
                                 }
@@ -176,13 +184,13 @@ public class PushService extends Service {
                                 //判断发布的时间是否在thisTime与lastTime之间
                                 //如果在，发布通知
 
-                                for (Map<String, Object> m : mData)
+                                for (Map<String, Object> m : noticeData)
                                 {
                                     //筛选新发布的通知，将该条通知信息作为参数
                                     String noticeTime = String.valueOf(m.get("time"));
                                     if(noticeTime.compareTo(lastTime) > 0 && noticeTime.compareTo(thisTime) < 0){
                                         String messageId = (String)m.get("summary");
-                                        sendNotice("科研助手来通知了！", String.valueOf(m.get("title")), messagePositon, messageId);
+                                        sendNotice("科研助手来通知了！", String.valueOf(m.get("title")), messagePositon, messageId, 1);
                                         messagePositon = messagePositon + 1;
                                     }
 
@@ -210,18 +218,130 @@ public class PushService extends Service {
             @Override
             public void onFailure(HttpException error, String msg) {
 
-                sendNotice("科研助手来消息了", "啊啊啊啊！网络错误~~", 800, "");
+                sendNotice("科研助手来消息了", "啊啊啊啊！网络错误~~", 1, "", 1);
             }
         });
     }
 
-    public void refreshQuestion(){
+    public void refreshQuestion(String offset, String pagesize) {
 
+        questionData.clear();
+        RequestParams params = new RequestParams();
+        params.addBodyParameter("offset", offset);
+        params.addBodyParameter("pagesize", pagesize);
+        // params.addBodyParameter("path", "/apps/测试应用/test文件夹");
 
+        HttpUtils http = new HttpUtils();
+        http.send(HttpRequest.HttpMethod.POST, ConfigUtil.MY_SERVICE_URL
+                + "getQuestionList.php", params, new RequestCallBack<String>() {
+
+            @Override
+            public void onStart() {
+                // resultText.setText("conn...");
+            }
+
+            @Override
+            public void onLoading(long total, long current, boolean isUploading) {
+                // resultText.setText(current + "/" + total);
+            }
+
+            @Override
+            public void onSuccess(final ResponseInfo<String> responseInfo) {
+                // resultText.setText("upload response:" + responseInfo.result);
+                //System.out.println(responseInfo.result);
+
+                mainActivity.runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+
+                        ObjectMapper objectMapper = new ObjectMapper();
+                        String json = responseInfo.result;
+                        JSONObject jsonObject = null;
+                        try {
+                            jsonObject = new JSONObject(json);
+                            int code = jsonObject.getInt("code");
+                            if (code == 215) {
+                                getQuestionList list = objectMapper.readValue(json,
+                                        getQuestionList.class);
+
+                                if (list != null) {
+                                    questionDataOk = getQuestionData(list);// 填充数据
+
+                                    if (questionDataOk.size() >= 0) {
+                                        questionData.addAll(questionDataOk);
+                                        questionDataOk.clear();
+
+                                    }
+
+                                }
+
+                                for (Map<String, Object> m : questionData)
+                                {
+                                    //筛选新发布的通知，将该条通知信息作为参数
+                                    String questionTime = String.valueOf(m.get("time"));
+                                    if(questionTime.compareTo(lastTime) > 0 && questionTime.compareTo(thisTime) < 0){
+                                        String messageId = (String)m.get("id");
+                                        sendNotice(String.valueOf(m.get("question_title")), String.valueOf(m.get("time")), messagePositon, messageId, 2);
+                                        messagePositon = messagePositon + 1;
+                                    }
+                                }
+
+                            }else if (code == 310) {
+
+                            }
+                        } catch (Exception e) {
+                            // TODO Auto-generated catch block
+                            e.printStackTrace();
+                        }
+
+                    }
+                });
+            }
+
+            @Override
+            public void onFailure(HttpException error, String msg) {
+                // resultText.setText(msg);
+            }
+        });
+    }
+
+    private List<Map<String, Object>> getQuestionData(getQuestionList mList) {
+        List<Map<String, Object>> list = new ArrayList<Map<String, Object>>();
+        List<getQuestionList.Data> dataList = mList.getResult().getData();
+
+        for (getQuestionList.Data result : dataList) {
+            if (result.getAnswer() != null) {
+                Map<String, Object> map = new HashMap<String, Object>();
+                map.put("question_title", result.getTitle());
+                map.put("answerer_name", result.getAnswer().getAnswer_nickname());
+                map.put("answerer_name", result.getLast_modify_time());
+                map.put("answer_content", result.getAnswer().getAnswer_content());
+                map.put("answer_time", result.getAnswer().getAnswer_time());
+                map.put("click_num", result.getView_num());
+                map.put("comment_num", result.getAnswer_num());
+                map.put("id", result.getId());
+                map.put("time", result.getAnswer().getAnswer_time());
+                list.add(map);
+            }else {
+
+                Map<String, Object> map = new HashMap<String, Object>();
+                map.put("question_title", result.getTitle());
+                map.put("answerer_name", "");
+                map.put("comment_time", result.getLast_modify_time());
+                map.put("answer_content", "");
+                map.put("answer_time", "");
+                map.put("click_num", result.getView_num());
+                map.put("comment_num", result.getAnswer_num());
+                map.put("id", result.getId());
+                map.put("time", result.getLast_modify_time());
+                list.add(map);
+            }
+        }
+        return list;
     }
 
 
-    private List<Map<String, Object>> getData(JSONObject jsonObject) {
+    private List<Map<String, Object>> getNoticeData(JSONObject jsonObject) {
         List<Map<String, Object>> list = new ArrayList<Map<String, Object>>();
         try {
             JSONArray jsonArray = jsonObject.getJSONObject("result").getJSONArray("info.list");
@@ -240,24 +360,24 @@ public class PushService extends Service {
         return list;
     }
 
-    public void sendNotice(String contentTitle,String contentText, int i, String summary){
+    public void sendNotice(String contentTitle,String contentText, int i, String summary, int type){
 
-
-        Intent broadcastIntent = new Intent(this, NotificationReceiver.class);
-        broadcastIntent.putExtra("summary", summary);
-        PendingIntent pendingIntent = PendingIntent.getBroadcast(this, UUID.randomUUID().hashCode(), broadcastIntent, PendingIntent.FLAG_UPDATE_CURRENT);
-        final Bitmap largeIcon = ((BitmapDrawable) getResources().getDrawable(R.drawable.ic_launcher)).getBitmap();
-        NotificationManager manager = (NotificationManager)getSystemService(NOTIFICATION_SERVICE);
-        Notification notification = new NotificationCompat.Builder(this)
-                .setContentTitle(contentTitle)
-                .setContentText(contentText)
-                .setWhen(System.currentTimeMillis())
-                .setSmallIcon(R.drawable.ic_launcher)
-                .setLargeIcon(largeIcon)
-                .setContentIntent(pendingIntent)
-                .setAutoCancel(true)
-                .build();
-        manager.notify(i, notification);
+            Intent broadcastIntent = new Intent(this, NotificationReceiver.class);
+            broadcastIntent.putExtra("summary", summary);
+            broadcastIntent.putExtra("type", type);
+            PendingIntent pendingIntent = PendingIntent.getBroadcast(this, UUID.randomUUID().hashCode(), broadcastIntent, PendingIntent.FLAG_UPDATE_CURRENT);
+            final Bitmap largeIcon = ((BitmapDrawable) getResources().getDrawable(R.drawable.ic_launcher)).getBitmap();
+            NotificationManager manager = (NotificationManager)getSystemService(NOTIFICATION_SERVICE);
+            Notification notification = new NotificationCompat.Builder(this)
+                    .setContentTitle(contentTitle)
+                    .setContentText(contentText)
+                    .setWhen(System.currentTimeMillis())
+                    .setSmallIcon(R.drawable.ic_launcher)
+                    .setLargeIcon(largeIcon)
+                    .setContentIntent(pendingIntent)
+                    .setAutoCancel(true)
+                    .build();
+            manager.notify(i, notification);
     }
 
 }
