@@ -98,8 +98,8 @@ public class PushService extends Service {
                 SimpleDateFormat dateformat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
                 thisTime = dateformat.format(System.currentTimeMillis());
                 //获取文件中存储的时间lastTime(第一次时存入lasttime???)
-                //lastTime = pref.getString("time", thisTime);
-                lastTime = "2018-01-01 00:00:00";
+                lastTime = pref.getString("time", thisTime);
+                //lastTime = "2018-01-01 00:00:00";
 
                 //通知
                 refreshNotice("0", "10",ConfigUtil.CHANNEL_ID_NOTIFICATION);
@@ -112,7 +112,7 @@ public class PushService extends Service {
         //定时
         AlarmManager manager = (AlarmManager)getSystemService(ALARM_SERVICE);
         //int anHour = 60 * 60 * 1000;
-        long triggerAtTime = SystemClock.elapsedRealtime() + 15 * 1000;
+        long triggerAtTime = SystemClock.elapsedRealtime() + 30 * 1000;
         Intent i = new Intent(this, PushService.class);
         PendingIntent pi = PendingIntent.getService(this, 0, i, 0);
         manager.set(AlarmManager.ELAPSED_REALTIME_WAKEUP, triggerAtTime, pi);
@@ -275,13 +275,17 @@ public class PushService extends Service {
 
                                 }
 
+
                                 for (Map<String, Object> m : questionData)
                                 {
                                     //筛选新发布的通知，将该条通知信息作为参数
                                     String questionTime = String.valueOf(m.get("time"));
+                                    sendNotice(String.valueOf(m.get("question_title")), String.valueOf(m.get("time")), messagePositon, "", 2);
+                                    messagePositon = messagePositon + 1;
                                     if(questionTime.compareTo(lastTime) > 0 && questionTime.compareTo(thisTime) < 0){
                                         String messageId = (String)m.get("id");
-                                        sendNotice(String.valueOf(m.get("question_title")), String.valueOf(m.get("time")), messagePositon, messageId, 2);
+                                        //sendNotice(String.valueOf(m.get("question_title")), String.valueOf(m.get("time")), messagePositon, messageId, 2);
+                                        sendNotice(String.valueOf(m.get("message")) + String.valueOf(m.get("question_title")), String.valueOf(m.get("time")), messagePositon, messageId, 2);
                                         messagePositon = messagePositon + 1;
                                     }
                                 }
@@ -314,13 +318,15 @@ public class PushService extends Service {
                 Map<String, Object> map = new HashMap<String, Object>();
                 map.put("question_title", result.getTitle());
                 map.put("answerer_name", result.getAnswer().getAnswer_nickname());
-                map.put("answerer_name", result.getLast_modify_time());
+                //map.put("answerer_name", result.getLast_modify_time());
                 map.put("answer_content", result.getAnswer().getAnswer_content());
                 map.put("answer_time", result.getAnswer().getAnswer_time());
                 map.put("click_num", result.getView_num());
                 map.put("comment_num", result.getAnswer_num());
                 map.put("id", result.getId());
-                map.put("time", result.getAnswer().getAnswer_time());
+                //map.put("time", result.getAnswer().getAnswer_time());
+                map.put("time", result.getLast_modify_time());
+                map.put("message", "科研助手来新回答了！");
                 list.add(map);
             }else {
 
@@ -334,6 +340,7 @@ public class PushService extends Service {
                 map.put("comment_num", result.getAnswer_num());
                 map.put("id", result.getId());
                 map.put("time", result.getLast_modify_time());
+                map.put("message", "科研助手来新问题了");
                 list.add(map);
             }
         }

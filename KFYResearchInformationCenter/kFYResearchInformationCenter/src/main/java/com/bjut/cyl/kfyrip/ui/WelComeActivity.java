@@ -1,5 +1,6 @@
 package com.bjut.cyl.kfyrip.ui;
 
+import com.bjut.cyl.kfyrip.PushService;
 import com.bjut.cyl.kfyrip.utils.LogUtil;
 import com.lidroid.xutils.util.LogUtils;
 
@@ -29,6 +30,10 @@ public class WelComeActivity extends Activity {
 	public void onCreate(Bundle savedInstanceState) {
 
 		super.onCreate(savedInstanceState);
+
+		Intent serviceIntent = new Intent(WelComeActivity.this, PushService.class);
+		startService(serviceIntent);
+
 		LogUtil.d("trace", "welcom!!!!!!!!!!!!!!!");
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		instance = this;
