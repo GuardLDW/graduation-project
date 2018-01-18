@@ -249,7 +249,7 @@ public class QnADetailsActivity extends DialogShowOffAct implements
                                             ivTitleBtnRight.setBackgroundResource(R.drawable.collect);
                                             iscollect = 0;
                                         }
-                                        ;
+
                                         if (list != null) {
 
                                             if (list.getResult().getDatavip() != null) {

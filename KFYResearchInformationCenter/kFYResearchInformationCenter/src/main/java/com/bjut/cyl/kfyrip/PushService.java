@@ -19,8 +19,12 @@ import android.os.Looper;
 import android.os.SystemClock;
 import android.preference.PreferenceManager;
 import android.support.v4.app.NotificationCompat;
+import android.support.v4.view.ViewCompat;
+import android.view.View;
 import android.widget.Toast;
 
+import com.bjut.cyl.kfyrip.bean.getAnswerList;
+import com.bjut.cyl.kfyrip.bean.getQuestionDetail;
 import com.bjut.cyl.kfyrip.bean.getQuestionList;
 import com.bjut.cyl.kfyrip.ui.LoginActivity;
 import com.bjut.cyl.kfyrip.ui.MainActivity;
@@ -56,6 +60,8 @@ public class PushService extends Service {
     private List<Map<String, Object>> noticeDataOk;
     private List<Map<String, Object>> questionData = new ArrayList<Map<String, Object>>();
     private List<Map<String, Object>> questionDataOk;
+    private List<Map<String, Object>> answerData = new ArrayList<Map<String, Object>>();
+    private List<Map<String, Object>> answerDataOk;
     private SharedPreferences pref;
     private SharedPreferences.Editor editor;
     private String thisTime;
@@ -112,7 +118,7 @@ public class PushService extends Service {
         //定时
         AlarmManager manager = (AlarmManager)getSystemService(ALARM_SERVICE);
         //int anHour = 60 * 60 * 1000;
-        long triggerAtTime = SystemClock.elapsedRealtime() + 30 * 1000;
+        long triggerAtTime = SystemClock.elapsedRealtime() + 60 * 1000;
         Intent i = new Intent(this, PushService.class);
         PendingIntent pi = PendingIntent.getService(this, 0, i, 0);
         manager.set(AlarmManager.ELAPSED_REALTIME_WAKEUP, triggerAtTime, pi);
@@ -324,8 +330,7 @@ public class PushService extends Service {
                 map.put("click_num", result.getView_num());
                 map.put("comment_num", result.getAnswer_num());
                 map.put("id", result.getId());
-                //map.put("time", result.getAnswer().getAnswer_time());
-                map.put("time", result.getLast_modify_time());
+                map.put("time", getAnswerList(result.getId(), result.getAnswer().getAnswer_time()));
                 map.put("message", "科研助手来新回答了！");
                 list.add(map);
             }else {
@@ -386,5 +391,216 @@ public class PushService extends Service {
                     .build();
             manager.notify(i, notification);
     }
+
+    private List<Map<String, Object>> getDataList1(getAnswerList mList) {
+        List<Map<String, Object>> list = new ArrayList<Map<String, Object>>();
+        List<getAnswerList.Data> dataList = mList.getResult().getData();
+
+        for (getAnswerList.Data result : dataList) {
+            if (result != null) {
+                Map<String, Object> map = new HashMap<String, Object>();
+                map.put("answerer_name", result.getUser_nickname());
+                map.put("answer_content", result.getContent());
+                map.put("answer_time", result.getLast_modify_time());
+                map.put("id", result.getId());
+                list.add(map);
+            }
+        }
+        return list;
+    }
+
+    public String getAnswerList(String id, String time1) {
+        sendNotice("获取回答列表", time1, messagePositon, id, 2);
+        messagePositon++;
+
+        String time = time1;
+        answerData.clear();
+        RequestParams params = new RequestParams();
+        params.addBodyParameter("id", id);
+        params.addBodyParameter("user_id", pref.getString("username", ""));
+        params.addBodyParameter("offset", "0");
+        HttpUtils http = new HttpUtils();
+        http.send(HttpRequest.HttpMethod.POST, ConfigUtil.MY_SERVICE_URL
+                        + "getAnswerList.php", params,
+                new RequestCallBack<String>() {
+
+                    @Override
+                    public void onSuccess(
+                            final ResponseInfo<String> responseInfo) {
+                        //System.out.println(responseInfo.result);
+                        mainActivity.runOnUiThread(new Runnable() {
+                            @Override
+                            public void run() {
+
+                                ObjectMapper objectMapper = new ObjectMapper();
+                                String json = responseInfo.result;
+                                JSONObject jsonObject = null;
+                                try {
+                                    jsonObject = new JSONObject(json);
+                                    int code = jsonObject.getInt("code");
+                                    if (code == 218) {
+                                        getAnswerList list = objectMapper
+                                                .readValue(json,
+                                                        getAnswerList.class);
+
+                                        if (list != null) {
+
+                                            answerDataOk = getDataList1(list);// 填充数据
+                                            //System.out.println("mdataok"+ mDataOkNormal);
+
+                                            if (answerDataOk.size() >= 0) {
+                                                answerData.addAll(answerDataOk);
+                                                answerDataOk.clear();
+
+                                            }
+                                        }
+                                    } else if (code == 318) {
+                                        Toast.makeText(getApplicationContext(),
+                                                "没有更多答案！", Toast.LENGTH_SHORT).show();
+
+                                        sendNotice("没有更多答案！", lastTime, 201, "", 2);
+                                    }
+                                } catch (Exception e) {
+                                    // TODO Auto-generated catch block
+                                    e.printStackTrace();
+                                }
+
+                            }
+                        });
+                    }
+
+                    @Override
+                    public void onFailure(HttpException error, String msg) {
+                        // resultText.setText(msg);
+                        sendNotice("获取回答列表失败", lastTime, 200, "", 2);
+                    }
+                });
+
+        for (Map<String, Object> m : answerData){
+            if(String.valueOf(m.get("answer_time")).compareTo(time) > 0){
+                time = String.valueOf(m.get("answer_time"));
+                sendNotice("大！！  " + String.valueOf(m.get("answer_content")), time, messagePositon, "", 2);
+                messagePositon++;
+            }else{
+                sendNotice("小！！  " + String.valueOf(m.get("answer_content")), time, messagePositon, "", 2);
+            }
+        }
+        return time;
+    }
+
+    /*
+    //返回最新回答时间
+    public String getQuestionDetail(String id, String time1) {
+
+        String time = time1;
+        answerData.clear();
+
+        RequestParams params = new RequestParams();
+        params.addBodyParameter("id", id);
+        params.addBodyParameter("user_id", pref.getString("username", ""));
+        HttpUtils http = new HttpUtils();
+        http.send(HttpRequest.HttpMethod.POST, ConfigUtil.MY_SERVICE_URL
+                        + "getQuestionDetail.php", params,
+                new RequestCallBack<String>() {
+
+                    @Override
+                    public void onSuccess(
+                            final ResponseInfo<String> responseInfo) {
+                        //System.out.println(responseInfo.result);
+                        mainActivity.runOnUiThread(new Runnable() {
+                            @Override
+                            public void run() {
+                                ObjectMapper objectMapper = new ObjectMapper();
+                                String json = responseInfo.result;
+                                JSONObject jsonObject = null;
+                                try {
+                                    jsonObject = new JSONObject(json);
+                                    int code = jsonObject.getInt("code");
+                                    if (code == 216) {
+                                        getQuestionDetail list = objectMapper
+                                                .readValue(json,
+                                                        getQuestionDetail.class);
+
+                                        if (list != null) {
+
+                                            //官方回答
+                                            if (list.getResult().getDatavip() != null) {
+                                                answerDataOk = getDataListVip(list);// 填充数据
+                                                if (answerDataOk.size() >= 0) {
+                                                    answerData.addAll(answerDataOk);
+                                                    answerDataOk.clear();
+                                                }
+                                            }
+                                            //一般回答
+                                            if (list.getResult().getDatanormal() != null) {
+                                                answerDataOk = getDataListNormal(list);// 填充数据
+                                                if (answerDataOk.size() >= 0) {
+                                                    answerData.addAll(answerDataOk);
+                                                    answerDataOk.clear();
+                                                }
+                                            }
+                                        }
+                                    }
+                                } catch (Exception e) {
+                                    // TODO Auto-generated catch block
+                                    e.printStackTrace();
+                                }
+
+                            }
+                        });
+                    }
+
+                    @Override
+                    public void onFailure(HttpException error, String msg) {
+
+                    }
+                });
+
+        for (Map<String, Object> m : answerData){
+            if(String.valueOf(m.get("answer_time")).compareTo(time) > 0){
+                time = String.valueOf(m.get("answer_time"));
+            }
+        }
+        return time;
+    }
+
+    private List<Map<String, Object>> getDataListVip(getQuestionDetail mList) {
+        List<Map<String, Object>> list = new ArrayList<Map<String, Object>>();
+        List<getQuestionDetail.Datavip> dataList = mList.getResult().getDatavip();
+        //System.out.println(dataList);
+        if (dataList != null) {
+            for (getQuestionDetail.Datavip result : dataList) {
+
+                Map<String, Object> map = new HashMap<String, Object>();
+                map.put("answerer_name", result.getUser_nickname());
+                map.put("answer_content", result.getContent());
+                map.put("answer_time", result.getLast_modify_time());
+                map.put("id", result.getId());
+                list.add(map);
+
+            }
+        }
+
+        return list;
+    }
+
+
+    private List<Map<String, Object>> getDataListNormal(getQuestionDetail mList) {
+        List<Map<String, Object>> list = new ArrayList<Map<String, Object>>();
+        List<getQuestionDetail.Datanormal> dataList = mList.getResult().getDatanormal();
+
+        for (getQuestionDetail.Datanormal result : dataList) {
+            if (result != null) {
+                Map<String, Object> map = new HashMap<String, Object>();
+                map.put("answerer_name", result.getUser_nickname());
+                map.put("answer_content", result.getContent());
+                map.put("answer_time", result.getLast_modify_time());
+                map.put("id", result.getId());
+                list.add(map);
+            }
+        }
+        return list;
+    }
+*/
 
 }
