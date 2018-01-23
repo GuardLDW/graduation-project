@@ -66,7 +66,8 @@ public class PushService extends Service {
     private SharedPreferences.Editor editor;
     private String thisTime;
     private String lastTime;
-    private String lastQuestionTime;
+    private String timeeeee;
+    private List<String> lastQuestionTime = new ArrayList<>();
     private MainActivity mainActivity;
     private int messagePositon;//通知显示的位置
 
@@ -286,14 +287,14 @@ public class PushService extends Service {
 
                                 for (Map<String, Object> m : questionData)
                                 {
-                                    //筛选新发布的通知，将该条通知信息作为参数
+                                    //筛选新发布的问答，将该条通知信息作为参数
                                     String questionTime = String.valueOf(m.get("time"));
+                                    sendNotice(String.valueOf(m.get("question_title")),questionTime , messagePositon, "", 2);
                                     //sendNotice(String.valueOf(m.get("message")), String.valueOf(m.get("question_title")), messagePositon, "", 2);
-                                    //messagePositon = messagePositon + 1;
+                                    messagePositon = messagePositon + 1;
                                     if(questionTime.compareTo(lastTime) > 0 && questionTime.compareTo(thisTime) < 0){
                                         String messageId = (String)m.get("id");
-                                        //sendNotice(String.valueOf(m.get("question_title")), String.valueOf(m.get("time")), messagePositon, messageId, 2);
-                                        sendNotice(String.valueOf(m.get("message")) + String.valueOf(m.get("question_title")), String.valueOf(m.get("time")), messagePositon, messageId, 2);
+                                        sendNotice(String.valueOf(m.get("message")), String.valueOf(m.get("question_title")), messagePositon, messageId, 2);
                                         messagePositon = messagePositon + 1;
                                     }
                                 }
@@ -320,9 +321,10 @@ public class PushService extends Service {
     private List<Map<String, Object>> getQuestionData(getQuestionList mList) {
         List<Map<String, Object>> list = new ArrayList<Map<String, Object>>();
         List<getQuestionList.Data> dataList = mList.getResult().getData();
-
+        int k = 0;
         for (getQuestionList.Data result : dataList) {
             if (result.getAnswer() != null) {
+
                 Map<String, Object> map = new HashMap<String, Object>();
                 map.put("question_title", result.getTitle());
                 map.put("answerer_name", result.getAnswer().getAnswer_nickname());
@@ -332,10 +334,16 @@ public class PushService extends Service {
                 map.put("click_num", result.getView_num());
                 map.put("comment_num", result.getAnswer_num());
                 map.put("id", result.getId());
+                //sendNotice(String.valueOf(result.getId()), String.valueOf(k), messagePositon, "", 2);
+                //messagePositon++;
+                //getAnswerList(result.getId(), result.getAnswer().getAnswer_time(), k);
                 getAnswerList(result.getId(), result.getAnswer().getAnswer_time());
-                map.put("time", lastQuestionTime);
+                //map.put("time", lastQuestionTime.get(i));
+                map.put("time", timeeeee);
+                k = k + 1;
                 map.put("message", "科研助手来新回答了！");
                 list.add(map);
+
             }else {
 
                 Map<String, Object> map = new HashMap<String, Object>();
@@ -413,14 +421,18 @@ public class PushService extends Service {
         return list;
     }
 
-    public void getAnswerList(String id, String time) {
+    public void getAnswerList(final String id, String time, final int i) {
+        sendNotice(id + "前" , lastQuestionTime.get(i),messagePositon,id,2);
+        messagePositon++;
 
-            lastQuestionTime = time;
+            lastQuestionTime.set(i,time);
             answerData.clear();
             RequestParams params = new RequestParams();
+            params.addBodyParameter("id", id);
             params.addBodyParameter("user_id", pref.getString("username", ""));
             params.addBodyParameter("offset", "0");
             HttpUtils http = new HttpUtils();
+
             http.send(HttpRequest.HttpMethod.POST, ConfigUtil.MY_SERVICE_URL
                             + "getAnswerList.php", params,
                     new RequestCallBack<String>() {
@@ -429,9 +441,9 @@ public class PushService extends Service {
                         public void onSuccess(
                                 final ResponseInfo<String> responseInfo) {
                             //System.out.println(responseInfo.result);
-                            mainActivity.runOnUiThread(new Runnable() {
-                                @Override
-                                public void run() {
+                            //mainActivity.runOnUiThread(new Runnable() {
+                                //@Override
+                                //public void run() {
 
                                     ObjectMapper objectMapper = new ObjectMapper();
                                     String json = responseInfo.result;
@@ -457,11 +469,10 @@ public class PushService extends Service {
                                             }
 
                                             for (Map<String, Object> m : answerData){
-                                                if(String.valueOf(m.get("answer_time")).compareTo(lastQuestionTime) > 0){
-                                                    lastQuestionTime = String.valueOf(m.get("answer_time"));
+                                                if(String.valueOf(m.get("answer_time")).compareTo(lastQuestionTime.get(i)) > 0){
+                                                    lastQuestionTime.set(i,String.valueOf(m.get("answer_time")));
                                                 }
                                             }
-
 
                                         } else if (code == 318) {
                                             Toast.makeText(getApplicationContext(),
@@ -473,8 +484,8 @@ public class PushService extends Service {
                                         e.printStackTrace();
                                     }
 
-                                }
-                            });
+                                //}
+                            //});
                         }
 
                         @Override
@@ -485,5 +496,78 @@ public class PushService extends Service {
 
         }
 
+    public void getAnswerList(final String id, String time) {
+
+        timeeeee = time;
+        answerData.clear();
+        RequestParams params = new RequestParams();
+        params.addBodyParameter("id", id);
+        params.addBodyParameter("user_id", pref.getString("username", ""));
+        params.addBodyParameter("offset", "0");
+        HttpUtils http = new HttpUtils();
+
+        http.send(HttpRequest.HttpMethod.POST, ConfigUtil.MY_SERVICE_URL
+                        + "getAnswerList.php", params,
+                new RequestCallBack<String>() {
+
+                    @Override
+                    public void onSuccess(
+                            final ResponseInfo<String> responseInfo) {
+                        //System.out.println(responseInfo.result);
+                        //mainActivity.runOnUiThread(new Runnable() {
+                        //@Override
+                        //public void run() {
+
+                        ObjectMapper objectMapper = new ObjectMapper();
+                        String json = responseInfo.result;
+                        JSONObject jsonObject = null;
+                        try {
+                            jsonObject = new JSONObject(json);
+                            int code = jsonObject.getInt("code");
+                            if (code == 218) {
+                                getAnswerList list = objectMapper
+                                        .readValue(json,
+                                                getAnswerList.class);
+
+                                if (list != null) {
+
+                                    answerDataOk = getDataList1(list);// 填充数据
+                                    //System.out.println("mdataok"+ mDataOkNormal);
+
+                                    if (answerDataOk.size() >= 0) {
+                                        answerData.addAll(answerDataOk);
+                                        answerDataOk.clear();
+
+                                    }
+                                }
+
+                                for (Map<String, Object> m : answerData){
+                                    if(String.valueOf(m.get("answer_time")).compareTo(timeeeee) > 0){
+                                        timeeeee = String.valueOf(m.get("answer_time"));
+                                    }
+                                }
+
+
+                            } else if (code == 318) {
+                                Toast.makeText(getApplicationContext(),
+                                        "没有更多答案！", Toast.LENGTH_SHORT).show();
+                            }
+
+                        } catch (Exception e) {
+                            // TODO Auto-generated catch block
+                            e.printStackTrace();
+                        }
+
+                        //}
+                        //});
+                    }
+
+                    @Override
+                    public void onFailure(HttpException error, String msg) {
+                        // resultText.setText(msg);
+                    }
+                });
+
+    }
 
 }
