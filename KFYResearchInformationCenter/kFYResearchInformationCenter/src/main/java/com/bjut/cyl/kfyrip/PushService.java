@@ -71,6 +71,7 @@ public class PushService extends Service {
     private MainActivity mainActivity;
     private int messagePositon;//通知显示的位置
 
+
     public PushService() {
     }
 
@@ -112,7 +113,7 @@ public class PushService extends Service {
                 //通知
                 refreshNotice("0", "10",ConfigUtil.CHANNEL_ID_NOTIFICATION);
                 refreshQuestion("0", "10");
-
+                //testThread();
 
 
             }
@@ -228,6 +229,7 @@ public class PushService extends Service {
             public void onFailure(HttpException error, String msg) {
 
                 sendNotice("科研助手来消息了", "啊啊啊啊！网络错误~~", 1, "", 1);
+
             }
         });
     }
@@ -287,7 +289,7 @@ public class PushService extends Service {
 
                                 for (Map<String, Object> m : questionData)
                                 {
-                                    //筛选新发布的问答，将该条通知信息作为参数
+                                    //筛选新发布的问答，将该条问答信息作为参数
                                     String questionTime = String.valueOf(m.get("time"));
                                     sendNotice(String.valueOf(m.get("question_title")),questionTime , messagePositon, "", 2);
                                     //sendNotice(String.valueOf(m.get("message")), String.valueOf(m.get("question_title")), messagePositon, "", 2);
@@ -334,12 +336,8 @@ public class PushService extends Service {
                 map.put("click_num", result.getView_num());
                 map.put("comment_num", result.getAnswer_num());
                 map.put("id", result.getId());
-                //sendNotice(String.valueOf(result.getId()), String.valueOf(k), messagePositon, "", 2);
-                //messagePositon++;
-                //getAnswerList(result.getId(), result.getAnswer().getAnswer_time(), k);
-                getAnswerList(result.getId(), result.getAnswer().getAnswer_time());
-                //map.put("time", lastQuestionTime.get(i));
-                map.put("time", timeeeee);
+                String lastestTime = getAnswerList1(result.getId(), result.getAnswer().getAnswer_time());
+                map.put("time", lastestTime);
                 k = k + 1;
                 map.put("message", "科研助手来新回答了！");
                 list.add(map);
@@ -421,84 +419,9 @@ public class PushService extends Service {
         return list;
     }
 
-    public void getAnswerList(final String id, String time, final int i) {
-        sendNotice(id + "前" , lastQuestionTime.get(i),messagePositon,id,2);
-        messagePositon++;
+    public String getAnswerList(final String id, final String time) {
 
-            lastQuestionTime.set(i,time);
-            answerData.clear();
-            RequestParams params = new RequestParams();
-            params.addBodyParameter("id", id);
-            params.addBodyParameter("user_id", pref.getString("username", ""));
-            params.addBodyParameter("offset", "0");
-            HttpUtils http = new HttpUtils();
-
-            http.send(HttpRequest.HttpMethod.POST, ConfigUtil.MY_SERVICE_URL
-                            + "getAnswerList.php", params,
-                    new RequestCallBack<String>() {
-
-                        @Override
-                        public void onSuccess(
-                                final ResponseInfo<String> responseInfo) {
-                            //System.out.println(responseInfo.result);
-                            //mainActivity.runOnUiThread(new Runnable() {
-                                //@Override
-                                //public void run() {
-
-                                    ObjectMapper objectMapper = new ObjectMapper();
-                                    String json = responseInfo.result;
-                                    JSONObject jsonObject = null;
-                                    try {
-                                        jsonObject = new JSONObject(json);
-                                        int code = jsonObject.getInt("code");
-                                        if (code == 218) {
-                                            getAnswerList list = objectMapper
-                                                    .readValue(json,
-                                                            getAnswerList.class);
-
-                                            if (list != null) {
-
-                                                answerDataOk = getDataList1(list);// 填充数据
-                                                //System.out.println("mdataok"+ mDataOkNormal);
-
-                                                if (answerDataOk.size() >= 0) {
-                                                    answerData.addAll(answerDataOk);
-                                                    answerDataOk.clear();
-
-                                                }
-                                            }
-
-                                            for (Map<String, Object> m : answerData){
-                                                if(String.valueOf(m.get("answer_time")).compareTo(lastQuestionTime.get(i)) > 0){
-                                                    lastQuestionTime.set(i,String.valueOf(m.get("answer_time")));
-                                                }
-                                            }
-
-                                        } else if (code == 318) {
-                                            Toast.makeText(getApplicationContext(),
-                                                    "没有更多答案！", Toast.LENGTH_SHORT).show();
-                                        }
-
-                                    } catch (Exception e) {
-                                        // TODO Auto-generated catch block
-                                        e.printStackTrace();
-                                    }
-
-                                //}
-                            //});
-                        }
-
-                        @Override
-                        public void onFailure(HttpException error, String msg) {
-                            // resultText.setText(msg);
-                        }
-                    });
-
-        }
-
-    public void getAnswerList(final String id, String time) {
-
-        timeeeee = time;
+        final String[] takeTime = {new String()};
         answerData.clear();
         RequestParams params = new RequestParams();
         params.addBodyParameter("id", id);
@@ -510,13 +433,15 @@ public class PushService extends Service {
                         + "getAnswerList.php", params,
                 new RequestCallBack<String>() {
 
+                    String tempTime = time;
+
                     @Override
                     public void onSuccess(
                             final ResponseInfo<String> responseInfo) {
-                        //System.out.println(responseInfo.result);
-                        //mainActivity.runOnUiThread(new Runnable() {
-                        //@Override
-                        //public void run() {
+
+                        mainActivity.runOnUiThread(new Runnable() {
+                        @Override
+                        public void run() {
 
                         ObjectMapper objectMapper = new ObjectMapper();
                         String json = responseInfo.result;
@@ -542,11 +467,14 @@ public class PushService extends Service {
                                 }
 
                                 for (Map<String, Object> m : answerData){
-                                    if(String.valueOf(m.get("answer_time")).compareTo(timeeeee) > 0){
-                                        timeeeee = String.valueOf(m.get("answer_time"));
+                                    if(String.valueOf(m.get("answer_time")).compareTo(tempTime) > 0){
+                                        tempTime = String.valueOf(m.get("answer_time"));
                                     }
                                 }
 
+                                takeTime[0] = tempTime;
+                                sendNotice(id, takeTime[0], messagePositon, "", 2);
+                                messagePositon++;
 
                             } else if (code == 318) {
                                 Toast.makeText(getApplicationContext(),
@@ -557,16 +485,180 @@ public class PushService extends Service {
                             // TODO Auto-generated catch block
                             e.printStackTrace();
                         }
+                        }
 
-                        //}
-                        //});
+                      });
+
                     }
+
 
                     @Override
                     public void onFailure(HttpException error, String msg) {
                         // resultText.setText(msg);
                     }
                 });
+
+
+        return takeTime[0];
+    }
+
+    public void testThread() {
+
+        RequestParams params = new RequestParams();
+
+        HttpUtils http = new HttpUtils();
+        http.send(HttpRequest.HttpMethod.POST, "https://www.baidu.com", params, new RequestCallBack<String>() {
+
+            @Override
+            public void onStart() {
+
+            }
+
+            @Override
+            public void onLoading(long total, long current, boolean isUploading) {
+                // resultText.setText(current + "/" + total);
+            }
+
+            @Override
+            public void onSuccess(final ResponseInfo<String> responseInfo) {
+                // resultText.setText("upload response:" + responseInfo.result);
+                //System.out.println(responseInfo.result);
+
+                //UpdateNoticeActivity.instance
+                mainActivity.runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+
+
+                        try {
+                            sendNotice("访问百度成功", "!!!!!", messagePositon, "", 1);
+                            messagePositon++;
+                            for(int i = 0; i < 3; i++){
+
+                                String a = testThread1(i);
+                                sendNotice("百度", a, messagePositon, "", 1);
+                                messagePositon++;
+                            }
+
+                        }
+                        catch (Exception e) {
+                            // TODO Auto-generated catch block
+                            e.printStackTrace();
+                        }
+
+                    }
+                });
+            }
+
+            @Override
+            public void onFailure(HttpException error, String msg) {
+
+                sendNotice("访问百度失败", "啊啊啊啊！网络错误~~", messagePositon, "", 1);
+                messagePositon++;
+            }
+        });
+    }
+
+    public String testThread1(final int i) {
+
+        String tempTime = String.valueOf(i);
+        Q q = new Q(tempTime);
+        final RequestParams params = new RequestParams();
+        HttpUtils http = new HttpUtils();
+        http.send(HttpRequest.HttpMethod.POST, "http://crm.highabove.net.cn", params, q);
+        String takeTime = q.getTime();
+        sendNotice("谷歌2", takeTime, messagePositon, "", 1);
+        messagePositon++;
+        return takeTime;
+    }
+
+    class Q extends RequestCallBack<String>{
+
+        String time;
+
+        public Q(String time1){
+            time = time1;
+        }
+
+        public String getTime(){
+
+            return time;
+        }
+
+
+        @Override
+        public void onSuccess(final ResponseInfo<String> responseInfo) {
+
+            mainActivity.runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+
+                    ObjectMapper objectMapper = new ObjectMapper();
+                    String json = responseInfo.result;
+                    JSONObject jsonObject = null;
+                    try {
+                        jsonObject = new JSONObject(json);
+                        int code = jsonObject.getInt("code");
+                        if (code == 218) {
+                            getAnswerList list = objectMapper
+                                    .readValue(json,
+                                            getAnswerList.class);
+
+                            if (list != null) {
+
+                                answerDataOk = getDataList1(list);// 填充数据
+                                //System.out.println("mdataok"+ mDataOkNormal);
+
+                                if (answerDataOk.size() >= 0) {
+                                    answerData.addAll(answerDataOk);
+                                    answerDataOk.clear();
+
+                                }
+                            }
+
+                            for (Map<String, Object> m : answerData){
+                                if(String.valueOf(m.get("answer_time")).compareTo(time) > 0){
+                                    time = String.valueOf(m.get("answer_time"));
+                                }
+                            }
+
+
+                        } else if (code == 318) {
+                            Toast.makeText(getApplicationContext(),
+                                    "没有更多答案！", Toast.LENGTH_SHORT).show();
+                        }
+
+                    } catch (Exception e) {
+                        // TODO Auto-generated catch block
+                        e.printStackTrace();
+                    }
+                }
+
+            });
+
+        }
+
+
+        @Override
+        public void onFailure(HttpException error, String msg) {
+            // resultText.setText(msg);
+        }
+    }
+
+    public String getAnswerList1(final String id, final String time) {
+
+        Q q = new Q(time);
+
+        answerData.clear();
+        RequestParams params = new RequestParams();
+        params.addBodyParameter("id", id);
+        params.addBodyParameter("user_id", pref.getString("username", ""));
+        params.addBodyParameter("offset", "0");
+        HttpUtils http = new HttpUtils();
+
+        http.send(HttpRequest.HttpMethod.POST, ConfigUtil.MY_SERVICE_URL + "getAnswerList.php", params,q);
+        String lastestTime = q.getTime();
+        return lastestTime;
 
     }
 

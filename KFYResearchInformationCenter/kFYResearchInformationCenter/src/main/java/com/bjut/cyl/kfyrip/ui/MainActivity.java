@@ -8,7 +8,6 @@ import android.graphics.Canvas;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.v4.app.Fragment;
-import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -20,13 +19,11 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.bjut.cyl.kfyrip.fragment.Fragment_home;
+import com.bjut.cyl.kfyrip.ScienceFragment;
 import com.bjut.cyl.kfyrip.fragment.MenuFragment;
 import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu;
 import com.jeremyfeinstein.slidingmenu.lib.app.SlidingFragmentActivity;
-import com.bjut.cyl.kfyrip.ui.R;
 
-import cn.jpush.android.api.JPushInterface;
 import cn.sharesdk.framework.ShareSDK;
 
 public class MainActivity extends SlidingFragmentActivity implements
