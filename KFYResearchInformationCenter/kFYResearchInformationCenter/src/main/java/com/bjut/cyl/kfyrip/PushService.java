@@ -60,8 +60,6 @@ public class PushService extends Service {
     private List<Map<String, Object>> noticeDataOk;
     private List<Map<String, Object>> questionData = new ArrayList<Map<String, Object>>();
     private List<Map<String, Object>> questionDataOk;
-    private List<Map<String, Object>> answerData = new ArrayList<Map<String, Object>>();
-    private List<Map<String, Object>> answerDataOk;
     private SharedPreferences pref;
     private SharedPreferences.Editor editor;
     private String thisTime;
@@ -323,7 +321,6 @@ public class PushService extends Service {
     private List<Map<String, Object>> getQuestionData(getQuestionList mList) {
         List<Map<String, Object>> list = new ArrayList<Map<String, Object>>();
         List<getQuestionList.Data> dataList = mList.getResult().getData();
-        int k = 0;
         for (getQuestionList.Data result : dataList) {
             if (result.getAnswer() != null) {
 
@@ -338,7 +335,6 @@ public class PushService extends Service {
                 map.put("id", result.getId());
                 String lastestTime = getAnswerList1(result.getId(), result.getAnswer().getAnswer_time());
                 map.put("time", lastestTime);
-                k = k + 1;
                 map.put("message", "科研助手来新回答了！");
                 list.add(map);
 
@@ -421,8 +417,10 @@ public class PushService extends Service {
 
     public String getAnswerList(final String id, final String time) {
 
+
+
         final String[] takeTime = {new String()};
-        answerData.clear();
+        //answerData.clear();
         RequestParams params = new RequestParams();
         params.addBodyParameter("id", id);
         params.addBodyParameter("user_id", pref.getString("username", ""));
@@ -442,6 +440,9 @@ public class PushService extends Service {
                         mainActivity.runOnUiThread(new Runnable() {
                         @Override
                         public void run() {
+
+                            List<Map<String, Object>> answerData = new ArrayList<Map<String, Object>>();
+                            List<Map<String, Object>> answerDataOk;
 
                         ObjectMapper objectMapper = new ObjectMapper();
                         String json = responseInfo.result;
@@ -575,6 +576,8 @@ public class PushService extends Service {
     class Q extends RequestCallBack<String>{
 
         String time;
+        List<Map<String, Object>> answerData = new ArrayList<Map<String, Object>>();
+        List<Map<String, Object>> answerDataOk;
 
         public Q(String time1){
             time = time1;
@@ -592,6 +595,8 @@ public class PushService extends Service {
             mainActivity.runOnUiThread(new Runnable() {
                 @Override
                 public void run() {
+
+                    answerData.clear();
 
                     ObjectMapper objectMapper = new ObjectMapper();
                     String json = responseInfo.result;
@@ -621,7 +626,8 @@ public class PushService extends Service {
                                     time = String.valueOf(m.get("answer_time"));
                                 }
                             }
-
+                            sendNotice(String.valueOf(answerData.size()), time, messagePositon, "", 2);
+                            messagePositon++;
 
                         } else if (code == 318) {
                             Toast.makeText(getApplicationContext(),
@@ -648,8 +654,6 @@ public class PushService extends Service {
     public String getAnswerList1(final String id, final String time) {
 
         Q q = new Q(time);
-
-        answerData.clear();
         RequestParams params = new RequestParams();
         params.addBodyParameter("id", id);
         params.addBodyParameter("user_id", pref.getString("username", ""));
