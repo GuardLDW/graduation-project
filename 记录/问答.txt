@@ -12,3 +12,5 @@
 transfrom  into final one element array
 
 匿名内部类在方法中，方法执行结束后，匿名内部类中的值会清除
+
+安卓多线程操作 while(true) CPU占用率过高
