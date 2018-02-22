@@ -1,0 +1,2 @@
+问答的适配器QnAListAdapter控制问答列表是否显示回答，通过检验answer_content是否为空
+MySQL数据库部署在Centos服务器上

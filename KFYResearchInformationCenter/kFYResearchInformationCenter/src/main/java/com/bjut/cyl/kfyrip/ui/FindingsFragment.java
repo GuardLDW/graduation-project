@@ -48,7 +48,8 @@ public class FindingsFragment extends DialogShowOffFrag implements OnClickListen
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
-		currIndex = 0;
+
+		currIndex = 6;//默认全部按钮为未选中状态
 		layoutView = inflater.inflate(R.layout.fragment_finding, container,
 				false);
 		initViews();
@@ -59,27 +60,44 @@ public class FindingsFragment extends DialogShowOffFrag implements OnClickListen
 		newsListView.setAdapter(mAdapter);
 		//System.out.println("***size" + mAdapter.getCount());
 		newsListView.setOnItemClickListener(this);
-		if (mData.size() == 0) {
-			getTZListByType("0", tz_type);
-		}
+
+        //默认加载全部类型的通知
+        testPost("0", "10" ,ConfigUtil.CHANNEL_ID_NOTIFICATION);
+		//if (mData.size() == 0) {
+		//	getTZListByType("0", tz_type);
+		//}
 
 		newsListView.setMode(PullToRefreshBase.Mode.BOTH);
 		newsListView.setOnRefreshListener(new PullToRefreshBase.OnRefreshListener2<ListView>() {
 			@Override
 			public void onPullDownToRefresh(
 					PullToRefreshBase<ListView> refreshView) {
+
 				mData.clear();
 				offset = 0;
-				getTZListByType("0", tz_type);
+
+				if(currIndex != 6){
+					getTZListByType("0", tz_type);
+				}else{
+					testPost("0", "10" ,ConfigUtil.CHANNEL_ID_NOTIFICATION);
+				}
 				mAdapter.notifyDataSetChanged();
 				new FinishRefresh().execute();
+
 			}
 
 			@Override
 			public void onPullUpToRefresh(
 					PullToRefreshBase<ListView> refreshView) {
+
 				offset = offset + 10;
-				getTZListByType(String.valueOf(offset), tz_type);
+
+				if(currIndex != 6){
+					getTZListByType(String.valueOf(offset), tz_type);
+				}else{
+					testPost(String.valueOf(offset), "10" ,ConfigUtil.CHANNEL_ID_NOTIFICATION);
+				}
+
 				mAdapter.notifyDataSetChanged();
 				new FinishRefresh().execute();
 			}
@@ -102,8 +120,11 @@ public class FindingsFragment extends DialogShowOffFrag implements OnClickListen
 		tv4.setOnClickListener(this);
 		tv5.setOnClickListener(this);
 		tv6.setOnClickListener(this);
+
+		//默认不选中
+
 		//默认第一个选中
-		tv1.setBackgroundDrawable(getResources().getDrawable(R.drawable.bg_finding_textview_selected));
+		//tv1.setBackgroundDrawable(getResources().getDrawable(R.drawable.bg_finding_textview_selected));
 	}
 
 	public void getTZListByType(String offset ,String tz_type) {
@@ -216,7 +237,11 @@ public class FindingsFragment extends DialogShowOffFrag implements OnClickListen
 					currIndex = 0;
 					tz_type = "1";
 					getTZListByType("0",tz_type);
-				}
+				}else{
+                    currIndex = 6;
+                    allStatue();
+                    testPost("0", "10" ,ConfigUtil.CHANNEL_ID_NOTIFICATION);
+                }
 				break;
 			case R.id.tv2:
 				changeStatue(tv2);
@@ -225,7 +250,11 @@ public class FindingsFragment extends DialogShowOffFrag implements OnClickListen
 					currIndex = 1;
 					tz_type = "2";
 					getTZListByType("0", tz_type);
-				}
+				}else{
+                    currIndex = 6;
+                    allStatue();
+                    testPost("0", "10" ,ConfigUtil.CHANNEL_ID_NOTIFICATION);
+                }
 				break;
 			case R.id.tv3:
 				changeStatue(tv3);
@@ -234,7 +263,11 @@ public class FindingsFragment extends DialogShowOffFrag implements OnClickListen
 					currIndex = 2;
 					tz_type = "3";
 					getTZListByType("0", tz_type);
-				}
+				}else{
+                    currIndex = 6;
+                    allStatue();
+                    testPost("0", "10" ,ConfigUtil.CHANNEL_ID_NOTIFICATION);
+                }
 
 				break;
 			case R.id.tv4:
@@ -244,7 +277,11 @@ public class FindingsFragment extends DialogShowOffFrag implements OnClickListen
 					currIndex = 3;
 					tz_type = "4";
 					getTZListByType("0", tz_type);
-				}
+				}else{
+                    currIndex = 6;
+                    allStatue();
+                    testPost("0", "10" ,ConfigUtil.CHANNEL_ID_NOTIFICATION);
+                }
 
 				break;
 			case R.id.tv5:
@@ -254,7 +291,11 @@ public class FindingsFragment extends DialogShowOffFrag implements OnClickListen
 					currIndex = 4;
 					tz_type = "5";
 					getTZListByType("0",tz_type);
-				}
+				}else{
+                    currIndex = 6;
+                    allStatue();
+                    testPost("0", "10" ,ConfigUtil.CHANNEL_ID_NOTIFICATION);
+                }
 				break;
 			case R.id.tv6:
 				changeStatue(tv6);
@@ -263,7 +304,11 @@ public class FindingsFragment extends DialogShowOffFrag implements OnClickListen
 					currIndex = 5;
 					tz_type = "0";
 					getTZListByType("0",tz_type);
-				}
+				}else{
+                    currIndex = 6;
+                    allStatue();
+                    testPost("0", "10" ,ConfigUtil.CHANNEL_ID_NOTIFICATION);
+                }
 				break;
 		}
 		}
@@ -276,6 +321,88 @@ public class FindingsFragment extends DialogShowOffFrag implements OnClickListen
 		tv5.setBackgroundDrawable(getResources().getDrawable(R.drawable.bg_finding_textview_normal));
 		tv6.setBackgroundDrawable(getResources().getDrawable(R.drawable.bg_finding_textview_normal));
 		tv.setBackgroundDrawable(getResources().getDrawable(R.drawable.bg_finding_textview_selected));
+	}
+
+    private void allStatue() {
+        tv1.setBackgroundDrawable(getResources().getDrawable(R.drawable.bg_finding_textview_normal));
+        tv2.setBackgroundDrawable(getResources().getDrawable(R.drawable.bg_finding_textview_normal));
+        tv3.setBackgroundDrawable(getResources().getDrawable(R.drawable.bg_finding_textview_normal));
+        tv4.setBackgroundDrawable(getResources().getDrawable(R.drawable.bg_finding_textview_normal));
+        tv5.setBackgroundDrawable(getResources().getDrawable(R.drawable.bg_finding_textview_normal));
+        tv6.setBackgroundDrawable(getResources().getDrawable(R.drawable.bg_finding_textview_normal));
+    }
+
+	public void testPost(String offset, String pagesize, String channel_id) {
+
+        mData.clear();
+
+		showProgressDialog();
+		RequestParams params = new RequestParams();
+		params.addBodyParameter("offset", offset);
+		params.addBodyParameter("pagesize", pagesize);
+		params.addBodyParameter("channel_id", channel_id);
+
+		// params.addBodyParameter("path", "/apps/测试应用/test文件夹");
+
+		HttpUtils http = new HttpUtils();
+		http.send(HttpRequest.HttpMethod.POST, ConfigUtil.MY_SERVICE_URL
+				+ "getInfoList.php", params, new RequestCallBack<String>() {
+
+			@Override
+			public void onStart() {
+				// resultText.setText("conn...");
+			}
+
+			@Override
+			public void onLoading(long total, long current, boolean isUploading) {
+				// resultText.setText(current + "/" + total);
+			}
+
+			@Override
+			public void onSuccess(final ResponseInfo<String> responseInfo) {
+				// resultText.setText("upload response:" + responseInfo.result);
+				//System.out.println(responseInfo.result);
+
+				getActivity().runOnUiThread(new Runnable() {
+					@Override
+					public void run() {
+						closeProgressDialog();
+						ObjectMapper objectMapper = new ObjectMapper();
+						String json = responseInfo.result;
+						JSONObject jsonObject = null;
+						try {
+							jsonObject = new JSONObject(json);
+							int code = jsonObject.getInt("code");
+							if (code == 210) {
+//								getInfoList list = objectMapper.readValue(json,
+//										getInfoList.class);
+								mDataOk = getData(jsonObject);// 填充数据
+								//System.out.println("mdataok" + mDataOk);
+
+								if (mDataOk.size() >= 0) {
+									mData.addAll(mDataOk);
+									mDataOk.clear();
+									//System.out.println(mData);
+									mAdapter.notifyDataSetChanged();
+								}
+							}else if (code == 310) {
+								Toast.makeText(getActivity(), "没有更多数据！",
+										Toast.LENGTH_SHORT).show();
+							}
+						} catch (Exception e) {
+							// TODO Auto-generated catch block
+							e.printStackTrace();
+						}
+
+					}
+				});
+			}
+
+			@Override
+			public void onFailure(HttpException error, String msg) {
+				// resultText.setText(msg);
+			}
+		});
 	}
 }
 	

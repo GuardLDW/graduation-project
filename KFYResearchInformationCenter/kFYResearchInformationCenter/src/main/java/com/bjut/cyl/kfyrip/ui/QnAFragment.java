@@ -193,7 +193,6 @@ public class QnAFragment extends DialogShowOffFrag implements
 				list.add(map);
 			}else {
 
-
 				Map<String, Object> map = new HashMap<String, Object>();
 				map.put("question_title", result.getTitle());
 				map.put("answerer_name", "");

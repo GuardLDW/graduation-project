@@ -1,3 +1,4 @@
+第一种方法：改变客户端，在客户端获取最新回答时间
 有问答
 循环问答列表，获取最新回答时间（调用获取问答详情接口，获取最新时间）
 
@@ -14,3 +15,8 @@ transfrom  into final one element array
 匿名内部类在方法中，方法执行结束后，匿名内部类中的值会清除
 
 安卓多线程操作 while(true) CPU占用率过高
+
+
+第二种方法：改变服务器，在服务器提供最新回答时间
+入手点：getQuestionList.php中'answer_time' => $answer["last_modify_time"]
+该值在answer表中，如何查询到answer表中的数据

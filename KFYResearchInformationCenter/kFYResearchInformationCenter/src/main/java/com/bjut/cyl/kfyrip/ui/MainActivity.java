@@ -35,13 +35,16 @@ public class MainActivity extends SlidingFragmentActivity implements
     private SlidingMenu sm;
     private FragmentManager fm;
     private MenuFragment menuFragment;
-    private InfomationCenterFragment infomationCenterFragment;
+
     private FindingsFragment findingsFragment;
     private MyResearchFragment myResearchFragment;
+    private ScienceFragment scienceFragment;
+    private ApplyFragment applyFragment;
+
+    private InfomationCenterFragment infomationCenterFragment;
     private NewsFragment newsFragment;
     private QnAFragment qnAFragment;
-    private ApplyFragment applyFragment;
-    private ScienceFragment scienceFragment;
+
     private LeftMenu leftMenu;
     private Button btnNews, btnQna, btnNoti;
     private ImageView btnInfo, btnFind, btnMy, btnBm, btnScience;

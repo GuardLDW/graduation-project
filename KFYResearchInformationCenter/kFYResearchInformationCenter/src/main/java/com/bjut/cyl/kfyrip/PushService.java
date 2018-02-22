@@ -329,8 +329,9 @@ public class PushService extends Service {
                 map.put("click_num", result.getView_num());
                 map.put("comment_num", result.getAnswer_num());
                 map.put("id", result.getId());
-                String lastestTime = getAnswerList(result.getId(), result.getAnswer().getAnswer_time());
-                map.put("time", lastestTime);
+                //String lastestTime = getAnswerList(result.getId(), result.getAnswer().getAnswer_time());
+                //map.put("time", lastestTime);
+                map.put("time", result.getAnswer().getAnswer_time());
                 map.put("message", "科研助手来新回答了！");
                 list.add(map);
 
@@ -474,6 +475,8 @@ public class PushService extends Service {
                         }
                         changeFlag = true;
 
+
+
                     } catch (Exception e) {
                         // TODO Auto-generated catch block
                         changeFlag = true;
@@ -494,7 +497,7 @@ public class PushService extends Service {
 
     public String getAnswerList(final String id, final String time) {
 
-        Q q = new Q(time);
+        final Q q = new Q(time);
         String lastestTime;
         RequestParams params = new RequestParams();
         params.addBodyParameter("id", id);
@@ -504,23 +507,15 @@ public class PushService extends Service {
         http.send(HttpRequest.HttpMethod.POST, ConfigUtil.MY_SERVICE_URL + "getAnswerList.php", params, q);
 
         while(!q.changeFlag){
-
             try {
                 Thread.sleep(1);
+                break;
             }catch (InterruptedException e) {
-               // TODO Auto-generated catch block
+                // TODO Auto-generated catch block
                 e.printStackTrace();
             }
 
         }
-
-        /*while(true){
-
-            if(q.changeFlag){
-                lastestTime = q.time;
-                break;
-            }
-        }*/
 
         lastestTime = q.time;
         sendNotice("getAnswerList: " + id, lastestTime, messagePositon, "", 2);

@@ -60,7 +60,7 @@
                 android:layout_height="@dimen/top_button_height"
                 android:layout_gravity="center"
                 android:layout_weight="1"
-                android:background="@drawable/xxzx_xw"/>
+                android:background="@drawable/xxzx_xw" />
 
             <TextView
                 android:id="@+id/xw_tv"
@@ -284,7 +284,6 @@
             android:text="@string/search"
             android:textColor="@color/view_num" />
     </LinearLayout>
-
 
 
 </RelativeLayout>
