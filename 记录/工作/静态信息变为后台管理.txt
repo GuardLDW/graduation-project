@@ -1,0 +1,4 @@
+办事指南中，专利、立项到款、报奖的静态图片以后台管理的方式实现
+使用ScrollView控件，ScrollView是一个布局容器，可以滚动的View，这个滚动的方向是垂直方向
+获取图片地址：调用getInforPic.php接口，解析得到图片地址result.get(X).picture，专利0，立项1，报奖2
+显示图片：使用Glide，加载获取到的地址上的图片

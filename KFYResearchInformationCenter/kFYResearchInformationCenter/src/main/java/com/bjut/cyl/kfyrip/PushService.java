@@ -239,7 +239,7 @@ public class PushService extends Service {
 
         HttpUtils http = new HttpUtils();
         http.send(HttpRequest.HttpMethod.POST, ConfigUtil.MY_SERVICE_URL
-                + "getQuestionList.php", params, new RequestCallBack<String>() {
+                + "getQuestionListByLDW.php", params, new RequestCallBack<String>() {
 
             @Override
             public void onStart() {

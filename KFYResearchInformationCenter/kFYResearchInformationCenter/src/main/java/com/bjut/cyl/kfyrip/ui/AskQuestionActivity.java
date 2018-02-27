@@ -180,8 +180,7 @@ public class AskQuestionActivity extends DialogShowOffAct implements
 			intent.putExtra("id", String.valueOf(Integer.valueOf(newId).intValue()+1));
 			intent.setClass(this, QnADetailsActivity.class);
 			intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
-			Toast.makeText(getApplicationContext(),
-					"往问答详情页面跳转！！！", Toast.LENGTH_SHORT).show();
+			//Toast.makeText(getApplicationContext(), "往问答详情页面跳转！！！", Toast.LENGTH_SHORT).show();
 			startActivity(intent);
 			AskQuestionByKeyActivity.instance.finish();
 			AskQuestionActivity.instance.finish();

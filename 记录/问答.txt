@@ -19,4 +19,14 @@ transfrom  into final one element array
 
 第二种方法：改变服务器，在服务器提供最新回答时间
 入手点：getQuestionList.php中'answer_time' => $answer["last_modify_time"]
-该值在answer表中，如何查询到answer表中的数据
+问答列表中显示的answerer_name,answer_content,answer_time是哪一个回答的？？？？
+值在answer表中，如何查询到answer表中的数据
+发布问题：调用publishQuestion.php接口，传入creator_id，title,content(没传时间，时间用的是服务器的系统时间)，插入到question表
+发布回答：调用publishAnswer.php接口，传入id，creator_id，content（没传时间，时间用的是服务器的系统时间），插入到answer表，answer表中有好多answer数据
+使用Navicat连接服务器上的MySQL数据库
+
+getQuestionList.php中：获取问题的回答信息的数据库查询代码
+$sql_ext = "select an.id,an.content,an.last_modify_time,us.username userid,us.nickname,us.face,us.vip from answer as an join user as us on an.creator_id = us.username where an.belongto = {$id} order by an.last_modify_time and us.vip desc";
+按照answer表中回答的时间升序排列，user表中的vip降序排列
+$sql_ext = "select an.id,an.content,an.last_modify_time,us.username userid,us.nickname,us.face,us.vip from answer as an join user as us on an.creator_id = us.username where an.belongto = {$id} order by an.last_modify_time desc,us.vip desc";
+改为按照answer表中回答的时间排列与user表中的vip降序排列，即可在客户端获取问题的最新回答时间

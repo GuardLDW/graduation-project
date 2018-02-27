@@ -38,8 +38,9 @@ public class MainActivity extends SlidingFragmentActivity implements
 
     private FindingsFragment findingsFragment;
     private MyResearchFragment myResearchFragment;
-    private ScienceFragment scienceFragment;
     private ApplyFragment applyFragment;
+
+    private ScienceFragment scienceFragment;
 
     private InfomationCenterFragment infomationCenterFragment;
     private NewsFragment newsFragment;

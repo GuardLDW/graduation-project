@@ -1,3 +1,9 @@
+原因：
+发布问题时调用publishQuestion.php接口，传入creator_id，title,content
+发布回答时调用publishAnswer.php接口，传入id，creator_id，content
+发布问题与回答时都没有传时间，时间用的是服务器的系统时间
+$time = date("Y-m-d H:i:s", time());
+
 1、date
 
 查看系统时间

@@ -1,0 +1,3 @@
+通知分类以标签形式组织按钮
+通知分类默认显示全部类别通知，点击类别，能够筛选出选中类别的通知，点击选中的类别，显示全部类别通知
+layout布局文件中使用style：style/finding_indictors_textview

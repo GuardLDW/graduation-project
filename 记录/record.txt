@@ -1,2 +1,7 @@
 问答的适配器QnAListAdapter控制问答列表是否显示回答，通过检验answer_content是否为空
 MySQL数据库部署在Centos服务器上
+List<Map<String, Object>>：list集合，有一个或多个，含有一个或多个的key，value的map
+Map<String, Object>：map集合，一个或多个key，value
+MAP1：第一个问题的key，value
+MAP2：第二个问题的key，value
+list.get(position).get(key)

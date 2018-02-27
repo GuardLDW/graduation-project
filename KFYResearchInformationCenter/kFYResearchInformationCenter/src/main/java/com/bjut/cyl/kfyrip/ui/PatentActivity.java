@@ -75,7 +75,8 @@ public class PatentActivity extends FragmentActivity implements View.OnClickList
                             Photo photo = new Gson().fromJson(json,Photo.class);
                             String picture = photo.result.get(0).picture;
                             //System.out.println("ooooooooooo"+picture);
-                            Glide.with(PatentActivity.this).load("http://resass.bjut.edu.cn/resass/" + picture).asBitmap().into(iv);
+                            Glide.with(PatentActivity.this).load("http://resass.bjut.edu.cn/resass/" + picture).asBitmap()
+                                    .into(iv);
                         } catch (Exception e) {
                             e.printStackTrace();
                         }

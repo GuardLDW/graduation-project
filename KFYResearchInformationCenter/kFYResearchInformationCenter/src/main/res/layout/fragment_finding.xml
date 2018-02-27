@@ -6,15 +6,15 @@
     android:orientation="vertical" >
 
     <LinearLayout
-        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:orientation="horizontal"
         android:paddingTop="5dp">
 
         <TextView
-            android:text="项目申报"
             android:id="@+id/tv1"
-            style="@style/finding_indictors_textview"/>
+            style="@style/finding_indictors_textview"
+            android:text="项目申报" />
 
         <TextView
             android:id="@+id/tv2"
@@ -22,11 +22,12 @@
             android:text="项目管理" />
 
         <TextView
-            android:text="报奖统计"
             android:id="@+id/tv3"
-            style="@style/finding_indictors_textview"/>
+            style="@style/finding_indictors_textview"
+            android:text="报奖统计" />
 
     </LinearLayout>
+
     <LinearLayout
         android:paddingBottom="5dp"
         android:layout_width="match_parent"
