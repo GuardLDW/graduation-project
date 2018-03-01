@@ -46,8 +46,6 @@ public class LoginActivity extends DialogShowOffAct implements OnClickListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
-
-
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
 //		int mode = WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN|WindowManager.LayoutParams.SOFT_INPUT_ADJUST_PAN;

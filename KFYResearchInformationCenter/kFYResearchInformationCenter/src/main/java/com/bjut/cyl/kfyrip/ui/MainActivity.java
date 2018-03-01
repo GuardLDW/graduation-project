@@ -40,18 +40,26 @@ public class MainActivity extends SlidingFragmentActivity implements
     private MyResearchFragment myResearchFragment;
     private ApplyFragment applyFragment;
 
-    private ScienceFragment scienceFragment;
+    //科研信息
+    //private ScienceFragment scienceFragment;
+    //private ImageView btnScience;
+    //private LinearLayout llscience;
+    //private TextView scienceTv;
 
-    private InfomationCenterFragment infomationCenterFragment;
-    private NewsFragment newsFragment;
-    private QnAFragment qnAFragment;
+    //通知
+    //private InfomationCenterFragment infomationCenterFragment;
+    //private Button btnNoti;
+    //private TextView tzTv;
+
+    private NewsFragment newsFragment;//新闻
+    private QnAFragment qnAFragment;//问答
 
     private LeftMenu leftMenu;
-    private Button btnNews, btnQna, btnNoti;
-    private ImageView btnInfo, btnFind, btnMy, btnBm, btnScience;
-    private LinearLayout llInfo, llFind, llMy, llBm, llscience;
+    private Button btnNews, btnQna;
+    private ImageView btnInfo, btnFind, btnMy, btnBm;
+    private LinearLayout llInfo, llFind, llMy, llBm;
     private LinearLayout buttonLayout, searchLl;
-    private TextView xxzxTv, fxTv, lcTv, tzTv, xwTv, wdTv, bmTv, scienceTv;
+    private TextView xxzxTv, fxTv, lcTv, xwTv, wdTv, bmTv;
     private SharedPreferences pref;
 
     public static MainActivity getInstance() {
@@ -66,7 +74,7 @@ public class MainActivity extends SlidingFragmentActivity implements
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_main);
-       //
+
         //Log.d("info", "[MyReceiver] 接收Registration Id : " + id);
         ShareSDK.initSDK(this);//初始化分享功能
         pref = PreferenceManager.getDefaultSharedPreferences(this);
@@ -148,15 +156,17 @@ public class MainActivity extends SlidingFragmentActivity implements
         transaction.show(leftMenu);
         transaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
         //初始化fragment
-        infomationCenterFragment = new InfomationCenterFragment();
+        //infomationCenterFragment = new InfomationCenterFragment();
         findingsFragment = new FindingsFragment();
         myResearchFragment = new MyResearchFragment();
         newsFragment = new NewsFragment();
         qnAFragment = new QnAFragment();
         applyFragment = new ApplyFragment();
-        scienceFragment = new ScienceFragment();
-        transaction.add(R.id.content, infomationCenterFragment);
-        transaction.show(infomationCenterFragment);
+        //scienceFragment = new ScienceFragment();
+        //transaction.add(R.id.content, infomationCenterFragment);
+        //transaction.show(infomationCenterFragment);
+        transaction.add(R.id.content, newsFragment);
+        transaction.show(newsFragment);
         transaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
         transaction.commit();
         //初始化按钮
@@ -165,13 +175,13 @@ public class MainActivity extends SlidingFragmentActivity implements
         btnMy = (ImageView) findViewById(R.id.btn_my_research);
         btnNews = (Button) findViewById(R.id.btn_news);
         btnQna = (Button) findViewById(R.id.btn_questnanswer);
-        btnNoti = (Button) findViewById(R.id.btn_notification);
+        //btnNoti = (Button) findViewById(R.id.btn_notification);
         btnBm = (ImageView) findViewById(R.id.btn_apply);
-        btnScience = (ImageView) findViewById(R.id.btn_science);
+        //btnScience = (ImageView) findViewById(R.id.btn_science);
 
         btnNews.setOnClickListener(this);
         btnQna.setOnClickListener(this);
-        btnNoti.setOnClickListener(this);
+        //btnNoti.setOnClickListener(this);
 
 
         buttonLayout = (LinearLayout) findViewById(R.id.ll_button);
@@ -181,26 +191,30 @@ public class MainActivity extends SlidingFragmentActivity implements
         llFind = (LinearLayout) findViewById(R.id.ll_finding);
         llMy = (LinearLayout) findViewById(R.id.ll_my_research);
         llBm = (LinearLayout) findViewById(R.id.ll_apply);
-        llscience = (LinearLayout) findViewById(R.id.ll_science);
+        //llscience = (LinearLayout) findViewById(R.id.ll_science);
         llInfo.setOnClickListener(this);
         llFind.setOnClickListener(this);
         llMy.setOnClickListener(this);
         llBm.setOnClickListener(this);
-        llscience.setOnClickListener(this);
+        //llscience.setOnClickListener(this);
 
         xxzxTv = (TextView) findViewById(R.id.xxzx_tv);
         fxTv = (TextView) findViewById(R.id.fx_tv);
         lcTv = (TextView) findViewById(R.id.lc_tv);
-        tzTv = (TextView) findViewById(R.id.tz_tv);
+        //tzTv = (TextView) findViewById(R.id.tz_tv);
         xwTv = (TextView) findViewById(R.id.xw_tv);
         wdTv = (TextView) findViewById(R.id.wd_tv);
         bmTv = (TextView) findViewById(R.id.apply_tv);
-        scienceTv = (TextView) findViewById(R.id.science_tv);
+        //scienceTv = (TextView) findViewById(R.id.science_tv);
 
         btnInfo.setBackgroundResource(R.drawable.tab_xxzx_click);
         xxzxTv.setTextColor(this.getResources().getColor(R.color.button_click));
-        btnNoti.setBackgroundResource(R.drawable.xxzx_tz_click);
-        tzTv.setTextColor(this.getResources().getColor(R.color.button_click));
+
+        //初始选中新闻
+        btnNews.setBackgroundResource(R.drawable.xxzx_xw_click);
+        xwTv.setTextColor(this.getResources().getColor(R.color.button_click));
+        //btnNoti.setBackgroundResource(R.drawable.xxzx_tz_click);
+        //tzTv.setTextColor(this.getResources().getColor(R.color.button_click));
 
         searchLl = (LinearLayout) findViewById(R.id.ll_search);
         searchLl.setOnClickListener(this);
@@ -240,6 +254,7 @@ public class MainActivity extends SlidingFragmentActivity implements
                 intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
                 startActivity(intent);
                 break;
+            /*
             case R.id.ll_information_center:
                 if (!infomationCenterFragment.isVisible()) {
                     searchLl.setVisibility(View.VISIBLE);
@@ -254,6 +269,7 @@ public class MainActivity extends SlidingFragmentActivity implements
                 ivTitleBtnRight.setVisibility(View.GONE);
 
                 break;
+            */
             case R.id.ll_finding:
                 if (!findingsFragment.isVisible()) {
                     searchLl.setVisibility(View.GONE);
@@ -289,6 +305,7 @@ public class MainActivity extends SlidingFragmentActivity implements
                 }
                 ivTitleBtnRight.setVisibility(View.GONE);
                 break;
+            /*
             case R.id.ll_science://底部的科研信息
                 searchLl.setVisibility(View.GONE);//隐藏搜索
                 if (!scienceFragment.isVisible()) {
@@ -301,6 +318,7 @@ public class MainActivity extends SlidingFragmentActivity implements
                 }
                 ivTitleBtnRight.setVisibility(View.GONE);
                 break;
+            */
             case R.id.btn_news:
                 if (!newsFragment.isVisible()) {
                     // myResearchFragment = new MyResearchFragment();
@@ -320,6 +338,7 @@ public class MainActivity extends SlidingFragmentActivity implements
                     setColorTop(3);
                 }
                 break;
+            /*
             case R.id.btn_notification:
                 if (!infomationCenterFragment.isVisible()) {
                     // infomationCenterFragment = new InfomationCenterFragment();
@@ -330,6 +349,7 @@ public class MainActivity extends SlidingFragmentActivity implements
                 }
                 ivTitleBtnRight.setVisibility(View.GONE);
                 break;
+            */
             default:
                 break;
         }
@@ -386,8 +406,8 @@ public class MainActivity extends SlidingFragmentActivity implements
                 lcTv.setTextColor(this.getResources().getColor(R.color.bottom_text));
                 btnBm.setBackgroundResource(R.drawable.tab_bm);
                 bmTv.setTextColor(this.getResources().getColor(R.color.bottom_text));
-                btnScience.setBackgroundResource(R.drawable.tab_science);
-                scienceTv.setTextColor(this.getResources().getColor(R.color.bottom_text));
+                //btnScience.setBackgroundResource(R.drawable.tab_science);
+                //scienceTv.setTextColor(this.getResources().getColor(R.color.bottom_text));
                 break;
             case 2:
                 btnInfo.setBackgroundResource(R.drawable.tab_xxzx);
@@ -398,8 +418,8 @@ public class MainActivity extends SlidingFragmentActivity implements
                 lcTv.setTextColor(this.getResources().getColor(R.color.bottom_text));
                 btnBm.setBackgroundResource(R.drawable.tab_bm);
                 bmTv.setTextColor(this.getResources().getColor(R.color.bottom_text));
-                btnScience.setBackgroundResource(R.drawable.tab_science);
-                scienceTv.setTextColor(this.getResources().getColor(R.color.bottom_text));
+                //btnScience.setBackgroundResource(R.drawable.tab_science);
+                //scienceTv.setTextColor(this.getResources().getColor(R.color.bottom_text));
                 break;
             case 3:
                 btnInfo.setBackgroundResource(R.drawable.tab_xxzx);
@@ -410,8 +430,8 @@ public class MainActivity extends SlidingFragmentActivity implements
                 lcTv.setTextColor(this.getResources().getColor(R.color.button_click));
                 btnBm.setBackgroundResource(R.drawable.tab_bm);
                 bmTv.setTextColor(this.getResources().getColor(R.color.bottom_text));
-                btnScience.setBackgroundResource(R.drawable.tab_science);
-                scienceTv.setTextColor(this.getResources().getColor(R.color.bottom_text));
+                //btnScience.setBackgroundResource(R.drawable.tab_science);
+                //scienceTv.setTextColor(this.getResources().getColor(R.color.bottom_text));
                 break;
             case 4:
                 btnInfo.setBackgroundResource(R.drawable.tab_xxzx);
@@ -422,9 +442,10 @@ public class MainActivity extends SlidingFragmentActivity implements
                 lcTv.setTextColor(this.getResources().getColor(R.color.bottom_text));
                 btnBm.setBackgroundResource(R.drawable.tab_bm_click);
                 bmTv.setTextColor(this.getResources().getColor(R.color.button_click));
-                btnScience.setBackgroundResource(R.drawable.tab_science);
-                scienceTv.setTextColor(this.getResources().getColor(R.color.bottom_text));
+                //btnScience.setBackgroundResource(R.drawable.tab_science);
+                //scienceTv.setTextColor(this.getResources().getColor(R.color.bottom_text));
                 break;
+            /*
             case 5://科研信息
                 btnInfo.setBackgroundResource(R.drawable.tab_xxzx);
                 xxzxTv.setTextColor(this.getResources().getColor(R.color.bottom_text));
@@ -437,6 +458,7 @@ public class MainActivity extends SlidingFragmentActivity implements
                 btnScience.setBackgroundResource(R.drawable.tab_science_click);
                 scienceTv.setTextColor(this.getResources().getColor(R.color.button_click));
                 break;
+            */
             default:
                 break;
         }
@@ -444,6 +466,7 @@ public class MainActivity extends SlidingFragmentActivity implements
 
     private void setColorTop(int num) {//顶部颜色切换
         switch (num) {
+            /*
             case 1:
                 btnNoti.setBackgroundResource(R.drawable.xxzx_tz_click);
                 tzTv.setTextColor(this.getResources().getColor(R.color.button_click));
@@ -452,17 +475,18 @@ public class MainActivity extends SlidingFragmentActivity implements
                 btnQna.setBackgroundResource(R.drawable.xxzx_wd);
                 wdTv.setTextColor(this.getResources().getColor(R.color.bottom_text));
                 break;
+            */
             case 2:
-                btnNoti.setBackgroundResource(R.drawable.xxzx_tz);
-                tzTv.setTextColor(this.getResources().getColor(R.color.bottom_text));
+                //btnNoti.setBackgroundResource(R.drawable.xxzx_tz);
+                //tzTv.setTextColor(this.getResources().getColor(R.color.bottom_text));
                 btnNews.setBackgroundResource(R.drawable.xxzx_xw_click);
                 xwTv.setTextColor(this.getResources().getColor(R.color.button_click));
                 btnQna.setBackgroundResource(R.drawable.xxzx_wd);
                 wdTv.setTextColor(this.getResources().getColor(R.color.bottom_text));
                 break;
             case 3:
-                btnNoti.setBackgroundResource(R.drawable.xxzx_tz);
-                tzTv.setTextColor(this.getResources().getColor(R.color.bottom_text));
+                //btnNoti.setBackgroundResource(R.drawable.xxzx_tz);
+                //tzTv.setTextColor(this.getResources().getColor(R.color.bottom_text));
                 btnNews.setBackgroundResource(R.drawable.xxzx_xw);
                 xwTv.setTextColor(this.getResources().getColor(R.color.bottom_text));
                 btnQna.setBackgroundResource(R.drawable.xxzx_wd_click);
