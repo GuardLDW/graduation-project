@@ -192,7 +192,8 @@ public class NotificationDetailsActivity extends DialogShowOffAct implements
         });
         contentWv.loadDataWithBaseURL(null, newcontent, "text/html",
                 "utf-8", null);
-        contentWv.setDownloadListener(new MyWebViewDownLoadListener());
+        //contentWv.setDownloadListener(new MyWebViewDownLoadListener());
+        contentWv.setDownloadListener(new MyWebViewDownLoadListener1());
     }
 
     private void initView() {
@@ -891,6 +892,35 @@ public class NotificationDetailsActivity extends DialogShowOffAct implements
         String type = getMIMEType(file);
         Intent intent = OpenFiles.getPreviewFileIntent(file,type);
         startActivity(intent);
+    }
+
+
+    private class MyWebViewDownLoadListener1 implements DownloadListener{
+
+        @Override
+
+        public void onDownloadStart(String url, String userAgent, String contentDisposition, String mimetype,
+
+                                    long contentLength) {
+
+            Log.i("tag", "url="+url);
+
+            Log.i("tag", "userAgent="+userAgent);
+
+            Log.i("tag", "contentDisposition="+contentDisposition);
+
+            Log.i("tag", "mimetype="+mimetype);
+
+            Log.i("tag", "contentLength="+contentLength);
+
+            Uri uri = Uri.parse(url);
+
+            Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+
+            startActivity(intent);
+
+        }
+
     }
 
 

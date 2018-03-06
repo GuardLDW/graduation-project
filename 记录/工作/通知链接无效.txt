@@ -1,0 +1,2 @@
+点击通知，调用getInfoDetail.php
+code：311，显示通知不存在

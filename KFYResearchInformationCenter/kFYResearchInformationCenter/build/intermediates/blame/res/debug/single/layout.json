@@ -24,12 +24,12 @@
         "source": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\activity_lxdk.xml"
     },
     {
-        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_dropdown_item_icons_2line.xml",
-        "source": "C:\\Users\\lenovo\\.android\\build-cache\\8959807ad9f5a7a148c0fc8de16ebcdfed73d948\\output\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
-    },
-    {
         "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_comment.xml",
         "source": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\dialog_comment.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_dropdown_item_icons_2line.xml",
+        "source": "C:\\Users\\lenovo\\.android\\build-cache\\8959807ad9f5a7a148c0fc8de16ebcdfed73d948\\output\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
     },
     {
         "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\item_office1.xml",
@@ -76,12 +76,12 @@
         "source": "C:\\Users\\haoran\\.android\\build-cache\\7e39e7af88cfdefbca85ada5267583c219b8a796\\output\\res\\layout\\abc_activity_chooser_view_list_item.xml"
     },
     {
-        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\activity_lxdk.xml",
-        "source": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\activity_lxdk.xml"
-    },
-    {
         "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\menu_item_wifi.xml",
         "source": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\menu_item_wifi.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\activity_lxdk.xml",
+        "source": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\activity_lxdk.xml"
     },
     {
         "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\pull_to_refresh_header_vertical.xml",
@@ -132,32 +132,32 @@
         "source": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\item_office1.xml"
     },
     {
-        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\notification_media_action.xml",
-        "source": "C:\\Users\\lenovo\\.android\\build-cache\\8959807ad9f5a7a148c0fc8de16ebcdfed73d948\\output\\res\\layout\\notification_media_action.xml"
+        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\pull_to_refresh_header_horizontal.xml",
+        "source": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\library\\build\\intermediates\\bundles\\default\\res\\layout\\pull_to_refresh_header_horizontal.xml"
     },
     {
         "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_home.xml",
         "source": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\fragment_home.xml"
     },
     {
-        "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\pull_to_refresh_header_horizontal.xml",
-        "source": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\library\\build\\intermediates\\bundles\\default\\res\\layout\\pull_to_refresh_header_horizontal.xml"
-    },
-    {
-        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\jpush_popwin_layout.xml",
-        "source": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\jpush_popwin_layout.xml"
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\notification_media_action.xml",
+        "source": "C:\\Users\\lenovo\\.android\\build-cache\\8959807ad9f5a7a148c0fc8de16ebcdfed73d948\\output\\res\\layout\\notification_media_action.xml"
     },
     {
         "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_view.xml",
         "source": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\dialog_view.xml"
     },
     {
-        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\slidingmenumain.xml",
-        "source": "F:\\Study\\bishe\\KFYResearchInformationCenter\\slidingMenuLib\\build\\intermediates\\bundles\\default\\res\\layout\\slidingmenumain.xml"
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\jpush_popwin_layout.xml",
+        "source": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\jpush_popwin_layout.xml"
     },
     {
         "merged": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\activity_ask_question.xml",
         "source": "C:\\Users\\haoran\\Desktop\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\activity_ask_question.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\slidingmenumain.xml",
+        "source": "F:\\Study\\bishe\\KFYResearchInformationCenter\\slidingMenuLib\\build\\intermediates\\bundles\\default\\res\\layout\\slidingmenumain.xml"
     },
     {
         "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\item_answer_list1.xml",
@@ -172,12 +172,12 @@
         "source": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\item_hotwords.xml"
     },
     {
-        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\activity_baojiang.xml",
-        "source": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\activity_baojiang.xml"
-    },
-    {
         "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\activity_welcom.xml",
         "source": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\activity_welcom.xml"
+    },
+    {
+        "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\activity_baojiang.xml",
+        "source": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\src\\main\\res\\layout\\activity_baojiang.xml"
     },
     {
         "merged": "F:\\Study\\bishe\\KFYResearchInformationCenter\\kFYResearchInformationCenter\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_radio.xml",

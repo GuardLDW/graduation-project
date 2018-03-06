@@ -254,22 +254,23 @@ public class MainActivity extends SlidingFragmentActivity implements
                 intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
                 startActivity(intent);
                 break;
-            /*
+
+            //默认加载新闻
             case R.id.ll_information_center:
-                if (!infomationCenterFragment.isVisible()) {
+                if (!newsFragment.isVisible()) {
                     searchLl.setVisibility(View.VISIBLE);
                     // infomationCenterFragment = new InfomationCenterFragment();
-                    transaction.replace(R.id.content, infomationCenterFragment);
+                    transaction.replace(R.id.content, newsFragment);
                     transaction
                             .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
                     buttonLayout.setVisibility(View.VISIBLE);
                     setColor(1);
-                    setColorTop(1);
+                    setColorTop(2);
                 }
                 ivTitleBtnRight.setVisibility(View.GONE);
 
                 break;
-            */
+
             case R.id.ll_finding:
                 if (!findingsFragment.isVisible()) {
                     searchLl.setVisibility(View.GONE);

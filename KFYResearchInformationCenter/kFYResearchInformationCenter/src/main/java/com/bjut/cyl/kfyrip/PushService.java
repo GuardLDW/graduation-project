@@ -105,6 +105,7 @@ public class PushService extends Service {
                 SimpleDateFormat dateformat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
                 thisTime = dateformat.format(System.currentTimeMillis());
                 //获取文件中存储的时间lastTime(第一次时存入lasttime???)
+                //调取接口成功后获取
                 lastTime = pref.getString("time", thisTime);
 
                 //通知
